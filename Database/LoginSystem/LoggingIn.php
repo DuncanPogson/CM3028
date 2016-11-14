@@ -7,16 +7,16 @@
  */
 
 session_start();
-$accessLevel = $_COOKIE['access_level_cookie'];
+$accesslevel = $_COOKIE['access_level_cookie'];
 
-displayAccessLevelInformation($accessLevel);
+displayAccessLevelInformation($accesslevel);
 
 function displayAccessLevelInformation($accessLevel)
 {
     if($accessLevel == "standarduser"){
         echo "<p style = \"background-colour: lightgreen\">You are currently logged in as a 'Contributor'</p>";
     }
-    elseif($accessLevel == "root"){
+    elseif($accessLevel == "NKPAG"){
         echo"<p style = \"background-colour: lightblue\">You are currently logged in as a 'NKPAG' </p>";
         echo"<p style = \"background-colour: lightblue\">You may now confirm map information</p>";
     }
