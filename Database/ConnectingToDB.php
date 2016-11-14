@@ -7,7 +7,7 @@
  */
 //Defining variables to store the database info
 define('DB_SERVER', 'eu-cdbr-azure-north-e.cloudapp.net');
-define('DB_USERNAME', 'b4defdb830e2bc\'');
+define('DB_USERNAME', 'b4defdb830e2bc');
 define('DB_PASSWORD', '44f41f1c');
 define('DB_DATABASE', 'cm3028_groupd3_db');
 
