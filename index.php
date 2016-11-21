@@ -21,7 +21,8 @@
 </header>
 <p>What would you like to do?</p>
 <ul>
-    <li><a href="Database/LoginSystem/SignUp.php">Sign up to the site</a></li>
+    <!--Linking to other areas of the site -->
+    <li><a href="Database/LoginSystem/SignUp.html">Sign up to the site</a></li>
     <li><a href="Database/LoginSystem/loginIndex.html">Log into the site</a></li>
     
 </ul>
