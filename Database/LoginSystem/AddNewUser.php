@@ -8,14 +8,18 @@
 
 include("DB_Connect.php");
 
-$fullName = $_POST["FullName"];
-$email = $_POST["Email"];
-$password = $_POST["Password"];
-$userID = 1;
-$accessLevel = 1;
+$_username = $_POST["FullName"];
+$_email = $_POST["Email"];
+$_password = $_POST["Password"];
+$_dateOfBirth = $_POST["Date of Birth"];
+$_address = $_POST["Address"];
+$_firstName = $_POST["First Name"];
+$_lastName = $_POST["Last Name"];
+$_userID = 1;
+$_accessLevel = 1;
 
 
-$sql = "INSERT INTO users (UserEmail, userName, UserPassword, UserId, AccessLevel) VALUES ('$email', '$fullName', '$password', '$userID', '$accessLevel')";
+$sql = "INSERT INTO users (email, username, password, userID, dateOfBirth, address, firstName, lastName, accessLevel) VALUES ('$_email', '$_username', '$_password', '$_dateOfBirth', '$_address', '$_firstName', '$_lastName', '$_userID', '$_accessLevel')";
 
 if(mysqli_query($db, $sql)){
 }else{
