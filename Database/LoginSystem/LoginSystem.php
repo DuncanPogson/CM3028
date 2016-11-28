@@ -18,8 +18,8 @@ $password = $_POST["login_password"];
 //Does the user exist
 $_does_Username_Exist = "SELECT * FROM 'user' WHERE  username='$username' and password='$password'";
 
-$_exist_Result = mysqli_query($connection, $_does_Username_Exist) or die(mysqli_error($connection));
-$count = mysqli_num_rows($result);
+$_exist_Result = mysqli_query($conn, $_does_Username_Exist) or die(mysqli_error($conn));
+$count = mysqli_num_rows($_exist_Result);
 //A Session is created when the details are correct
 if ($count == 1){
     $_SESSION['username'] = $username;
@@ -40,9 +40,9 @@ if (isset($_SESSION['username'])){
 
 //Testing to see if the details were correct
 //Sets the user to the corresponding access level
-if($username =="username" && $password=="password")
-{
-    setcookie('access_level_cookie','standarduser');
-}
+//if($username =="username" && $password=="password")
+//{
+//    setcookie('access_level_cookie','standarduser');
+//}
 
-header('Location: LoggingIn.php');
+//header('Location: LoggingIn.php');
