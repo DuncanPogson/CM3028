@@ -12,7 +12,8 @@ echo "
 <h2>Health Articles</h2>
 <ul>
 ";
-$sql = "SELECT * FROM health news ";
+
+$sql = "SELECT * FROM healthnews ";
 $result = $conn->query($sql);
 while($row = $result->fetch_array())
 {
