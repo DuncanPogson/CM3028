@@ -21,7 +21,7 @@ while($row = $result->fetch_array())
     $articleName = $row['title'];
     $articleAuthor = $row['userID'];
     //$authNamSql = "SELECT 'username' FROM users WHERE userID ='" . $articleAuthor ."'";
-    $authorName = mysqli_query("SELECT 'username' FROM users WHERE userID ='" . $row['userID'] ."'");
+    $authorName = mysqli_query("SELECT 'username' FROM users WHERE userID = 'userID' ");
 
     echo "<li><a href='health_wellbeing.php/{$articleID}'>{$articleName}</a> by {$authorName}</li>";
 
