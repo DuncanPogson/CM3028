@@ -18,9 +18,9 @@ while($row = $result->fetch_array())
 {
     $articleID = $row['itemID'];
     $articleName = $row['title'];
-    $articleAuthor = "SELECT 'username' FROM users WHERE userID = " + $row['userID'];
-    echo "<li><a href='blog/{$articleID}'>{$articleName}</a> by {$articleAuthor}</
-li>";
+    $articleAuthor = $row['userID'];
+    echo "<li><a href='health_article.php'>{$articleName}</a> by {$articleAuthor}</li>";
+
 }
 echo "
 </main>
