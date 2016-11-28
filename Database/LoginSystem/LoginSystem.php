@@ -12,25 +12,25 @@ session_start();
 include("DB_Connect.php");
 
 //Variables to store the username and password
-$username = $_POST["login_username"];
-$password = $_POST["login_password"];
+$_login_username = $_POST["login_username"];
+$_password = $_POST["login_password"];
 
 //Does the user exist
-$_does_Username_Exist = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+$_does_Username_Exist = "SELECT * FROM users WHERE username='$_login_username' AND password='$_password'";
 
 $_exist_Result = mysqli_query($conn, $_does_Username_Exist) or die(mysqli_error($conn));
 $count = mysqli_num_rows($_exist_Result);
-//A Session is created when the details are correct
+//A Session is created if the details are correct
 if ($count == 1){
-    $_SESSION['username'] = $username;
+    $_SESSION['username'] = $_login_username;
 }else{
 //If login fails user wil be notified
     $fail_msg = "Invalid Login Credentials.";
 }
 //If the user successfully logs in they will be greeted with a welcome message
 if (isset($_SESSION['username'])){
-    $username = $_SESSION['username'];
-    echo "Hello " . $username . "
+    $_login_username = $_SESSION['username'];
+    echo "Hello " . $_login_username . "
 ";
     echo "This is the Members Area
 ";
@@ -38,11 +38,3 @@ if (isset($_SESSION['username'])){
 
 }
 
-//Testing to see if the details were correct
-//Sets the user to the corresponding access level
-//if($username =="username" && $password=="password")
-//{
-//    setcookie('access_level_cookie','standarduser');
-//}
-
-//header('Location: LoggingIn.php');
