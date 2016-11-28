@@ -9,7 +9,7 @@
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     ?>
     <main>
-        form action="LoginSystem.php" method="post">
+        <form action="LoginSystem.php" method="post">
         Name:<br>
         <input type="text" name="login_username" placeholder="Username">
         <br>
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     </main>
     <?
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    include("/DB_Connect");
+    include("DB_Connect.php");
     $log_username = $_POST["login_username"];
     $log_password = $_POST["login_password"];
     function check_login($log_username, $log_password, $conn)
@@ -37,7 +37,7 @@ password='" . $log_password . "'";
         }
         return false;
     }
-    if (checklogin($log_username, $log_password, $conn)) {
+    if (check_login($log_username, $log_password, $conn)) {
         session_start();
         $_SESSION['username'] = $log_username;
         header("location:./");
