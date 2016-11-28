@@ -26,5 +26,4 @@ if(mysqli_query($db, $sql)){
     echo "Error: " . $sql . "<br>" . mysqli_error($db);
 }
 
-header("location:CM3028/index.php");
 ?>
