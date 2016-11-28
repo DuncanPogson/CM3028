@@ -20,7 +20,7 @@ session_start();
         <ul>
             <li><a href="./">Home</a></li>
             <li><a href="sportlethen.php">Sportlethen</a></li>
-            <li><a href="health.php">Health and Wellbeing</a></li>
+            <li><a href="health_wellbeing.php">Health and Wellbeing</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
             <?

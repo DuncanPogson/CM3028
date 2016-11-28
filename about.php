@@ -10,7 +10,7 @@ include ("header.php");
 //text
 echo "
 <main>
-<h2>About Me</h2>
+<h2>About</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros quam,
 pharetra ornare venenatis nec, eleifend vulputate dui. Phasellus a faucibus elit.
 Vivamus sit amet porttitor quam. Nullam ut felis euismod, pulvinar felis a, mollis
