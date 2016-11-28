@@ -39,10 +39,10 @@ password='" . $log_password . "'";
     }
     if (check_login($log_username, $log_password, $conn)) {
         session_start();
-        $_SESSION['username'] = $log_username;
-        header("location:./");
+        $_SESSION['login_username'] = $log_username;
+        header("../../index.php");
     } else {
-        header("location:login");
+        header("location:LoginSystem.php");
     }
 } else {
     // everything is awful
