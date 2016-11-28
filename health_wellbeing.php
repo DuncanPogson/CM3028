@@ -21,8 +21,9 @@ while($row = $result->fetch_array())
     $articleName = $row['title'];
     $articleAuthor = $row['userID'];
     $authNamSql = "SELECT 'username' FROM users WHERE userID ='" . $articleAuthor ."'";
+    $authorName = $conn->query($authNamSql);
 
-    echo "<li><a href='health_wellbeing.php/{$articleID}'>{$articleName}</a> by {$authNamSql}</li>";
+    echo "<li><a href='health_wellbeing.php/{$articleID}'>{$articleName}</a> by {$authorName}</li>";
 
 }
 echo "
