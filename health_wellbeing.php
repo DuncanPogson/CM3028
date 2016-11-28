@@ -19,7 +19,7 @@ while($row = $result->fetch_array())
 {
     $articleID = $row['itemID'];
     $articleName = $row['title'];
-    $articleAuthor = $row['userID'];
+    $articleAuthor = "SELECT 'username' FROM users WHERE userID = " + $row['userID'];
 
     echo "<li><a href='health_wellbeing.php/{$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
 
