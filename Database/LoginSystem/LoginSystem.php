@@ -22,14 +22,14 @@ $_exist_Result = mysqli_query($conn, $_does_Username_Exist) or die(mysqli_error(
 $count = mysqli_num_rows($_exist_Result);
 //A Session is created if the details are correct
 if ($count == 1){
-    $_SESSION['username'] = $_login_username;
+    $_SESSION['login_username'] = $_login_username;
 }else{
 //If login fails user wil be notified
     $fail_msg = "Invalid Login Credentials.";
 }
 //If the user successfully logs in they will be greeted with a welcome message
-if (isset($_SESSION['username'])){
-    $_login_username = $_SESSION['username'];
+if (isset($_SESSION['login_username'])){
+    $_login_username = $_SESSION['login_username'];
     echo "Hello " . $_login_username . "
 ";
     echo "This is the Members Area
