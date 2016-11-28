@@ -5,9 +5,8 @@
  * Date: 28/11/2016
  * Time: 21:25
  */
-include ("/Database/LoginSystem/DB_Connect.php");
+include ("Database/LoginSystem/DB_Connect.php");
 include ("header.php");
-$articleID = $params['blogID'];
 echo "
 <main>
 ";
