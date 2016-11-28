@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: duncanpogson
  * Date: 28/11/2016
- * Time: 20:36
+ * Time: 22:38
  */
 session_start();
 ?>
@@ -11,18 +11,18 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <title>Active Portlethen</title>
 </head>
 <body>
 <header>
-    <h1>Homepage</h1>
+    <h1>Portlethen's guide to healthy living and keeping active</h1>
     <nav>
         <ul>
-            <li><a href="./">Home</a></li>
+            <li><a href="home.php">Home</a></li>
             <li><a href="sportlethen.php">Sportlethen</a></li>
             <li><a href="health_wellbeing.php">Health and Wellbeing</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a href="about.php">about</a></li>
+            <li><a href="contact.php">contact</a></li>
             <?
             if (isset($_SESSION['username'])) {
                 echo "<li><a href='logout'>Logout</a></li>";

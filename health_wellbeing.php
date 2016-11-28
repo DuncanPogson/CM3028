@@ -20,7 +20,7 @@ while($row = $result->fetch_array())
     $articleName = $row['title'];
     $articleAuthor = $row['userID'];
 
-    echo "<li><a href='health_article.php/{$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
+    echo "<li><a href='health_wellbeing.php/{$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
 
 }
 echo "
