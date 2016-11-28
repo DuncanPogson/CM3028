@@ -5,7 +5,7 @@
  * Date: 28/11/2016
  * Time: 20:59
  */
-include ("/Database/LoginSystem/DB_Connect.php");
+include ("Database/LoginSystem/DB_Connect.php");
 include ("header.php");
 echo "
 <main>
