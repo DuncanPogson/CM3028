@@ -24,6 +24,7 @@
     <!--Linking to other areas of the site -->
     <li><a href="Database/LoginSystem/SignUp.html">Sign up to the site</a></li>
     <li><a href="Database/LoginSystem/loginIndex.html">Log into the site</a></li>
+    <li><a href=Database/LoginSystem/ContactForm.html">Contact the club</a></li>
     
 </ul>
 </body>
