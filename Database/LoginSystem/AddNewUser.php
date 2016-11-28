@@ -15,11 +15,10 @@ $_dateOfBirth = $_POST["dateOfBirth"];
 $_address = $_POST["address"];
 $_firstName = $_POST["firstName"];
 $_lastName = $_POST["lastName"];
-$_userID = 1;
 $_accessLevel = 1;
 
 
-$sql = "INSERT INTO users (email, username, password, userID, dateOfBirth, address, firstName, lastName, accessLevel) VALUES ('$_email', '$_username', '$_password', '$_dateOfBirth', '$_address', '$_firstName', '$_lastName', '$_userID', '$_accessLevel')";
+$sql = "INSERT INTO users (email, username, password, dateOfBirth, address, firstName, lastName, accessLevel) VALUES ('$_email', '$_username', '$_password', '$_dateOfBirth', '$_address', '$_firstName', '$_lastName', '$_accessLevel')";
 
 if(mysqli_query($conn, $sql)){
 }else{
