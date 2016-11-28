@@ -18,7 +18,7 @@ $conn = new mysqli($serverName, $DB_name, $DB_password, $DB);
 if($conn->connect_error){
     die('ConnectFailed['.$db->connect_error.']');
 }
-//Letting the user know that the connection was successful
+//Letting me know that the connection was successful
 echo "connected Successfully";
 
 
