@@ -21,7 +21,7 @@ $_does_Username_Exist = "SELECT * FROM users WHERE username='$_login_username' A
 $_exist_Result = mysqli_query($conn, $_does_Username_Exist) or die(mysqli_error($conn));
 $count = mysqli_num_rows($_exist_Result);
 //A Session is created if the details are correct
-if ($count == 1){
+if ($count == 0){
     $_SESSION['login_username'] = $_login_username;
 }else{
 //If login fails user wil be notified
