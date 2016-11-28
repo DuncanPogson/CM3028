@@ -6,35 +6,46 @@
  * Time: 15:38
  */
 //Start the session
-session_start();
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    ?>
+    <main>
+        form action="LoginSystem.php" method="post">
+        Name:<br>
+        <input type="text" name="login_username" placeholder="Username">
+        <br>
+        Password:<br>
+        <input type="password" name="login_password" placeholder="Password">
+        <br><br>
+        <input type="submit" value="Login">
+        </form>
+    </main>
+    <?
+} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    include("/DB_Connect");
+    $log_username = $_POST["login_username"];
+    $log_password = $_POST["login_password"];
+    function check_login($log_username, $log_password, $conn)
+    {
+        //Check the database to see if the details match
+        $sql = "SELECT * FROM users WHERE username='" . $log_username . "' and
+password='" . $log_password . "'";
 
-//Include The database
-include("DB_Connect.php");
-
-//Variables to store the username and password
-$_login_username = $_POST["login_username"];
-$_password = $_POST["login_password"];
-
-//Does the user exist
-$_does_Username_Exist = "SELECT * FROM users WHERE username='$_login_username' AND password='$_password'";
-
-$_exist_Result = mysqli_query($conn, $_does_Username_Exist) or die(mysqli_error($conn));
-$count = mysqli_num_rows($_exist_Result);
-//A Session is created if the details are correct
-if ($count == 0){
-    $_SESSION['login_username'] = $_login_username;
-}else{
-//If login fails user wil be notified
-    $fail_msg = "Invalid Login Credentials.";
+        //return the result of the sql query
+        $result = $conn->query($sql);
+        while ($row = $result->fetch_array()) {
+            return true;
+        }
+        return false;
+    }
+    if (checklogin($log_username, $log_password, $conn)) {
+        session_start();
+        $_SESSION['username'] = $log_username;
+        header("location:./");
+    } else {
+        header("location:login");
+    }
+} else {
+    // everything is awful
+    print('Invalid login details');
 }
-//If the user successfully logs in they will be greeted with a welcome message
-if (isset($_SESSION['login_username'])){
-    $_login_username = $_SESSION['login_username'];
-    echo "Hello " . $_login_username . "
-";
-    echo "This is the Members Area
-";
-    echo "<a href='logout.php'>Logout</a>";
-
-}
-
+?>
