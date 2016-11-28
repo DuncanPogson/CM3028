@@ -16,7 +16,7 @@ $username = $_POST["login_username"];
 $password = $_POST["login_password"];
 
 //Does the user exist
-$_does_Username_Exist = "SELECT * FROM 'users' WHERE  username='$username' and password='$password'";
+$_does_Username_Exist = "SELECT * FROM users WHERE username='$username' AND password='$password'";
 
 $_exist_Result = mysqli_query($conn, $_does_Username_Exist) or die(mysqli_error($conn));
 $count = mysqli_num_rows($_exist_Result);
