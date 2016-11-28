@@ -6,7 +6,7 @@
  * Time: 14:28
  */
 
-include("DB_Connect.php");
+include("../../Database/LoginSystem/DB_Connect.php");
 
 $_username = $_POST["FullName"];
 $_email = $_POST["Email"];
