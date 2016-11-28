@@ -42,7 +42,7 @@ password='" . $log_password . "'";
         $_SESSION['login_username'] = $log_username;
         header("../../index.php");
     } else {
-        header("location:LoginSystem.php");
+        header("location:shite");
     }
 } else {
     // everything is awful
