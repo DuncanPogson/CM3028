@@ -20,11 +20,8 @@ while($row = $result->fetch_array())
     $articleID = $row['itemID'];
     $articleName = $row['title'];
     $articleAuthor = $row['userID'];
-    //$authNamSql = "SELECT 'username' FROM users WHERE userID ='" . $articleAuthor ."'";
-    $authorNameQuery = "SELECT username FROM users WHERE userID ='" . $articleAuthor . "'";
-    $result = mysql_query($authorNameQuery);
 
-    echo "<li><a href='health_wellbeing.php/{$articleID}'>{$articleName}</a> by {$result}</li>";
+    echo "<li><a href='health_wellbeing.php/{$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
 
 }
 echo "
