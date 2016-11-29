@@ -10,19 +10,22 @@ include ("header.php");
 echo "
 <main>
 ";
-$sql = "SELECT * FROM health news where itemID = '$articleID'";
+
+$sql = "SELECT * FROM healthnews where itemID = '$articleID'";
 $result = $conn->query($sql);
+
 while($row = $result->fetch_array())
 {
     $articleID = $row['itemID'];
     $articleName = $row['title'];
-    $articleAuthor = "SELECT 'username' FROM users WHERE userID = " + $row['userID'];
+    $articleAuthor = $row['userID'];
     $articleText = $row['content'];
+
     echo "
 <atricle>
- <h2>{$articleName}</h2>
- <h3>by {$articleAuthor}</h3>
- {$articleText}
+    <h2>{$articleName}</h2>
+    <h3>by {$articleAuthor}</h3>
+    {$articleText}
  </atricle>";
 }
 echo "
