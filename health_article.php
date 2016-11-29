@@ -15,7 +15,7 @@ echo "
 <main>
 ";
 
-$sql = "SELECT * FROM healthnews where itemID = '$articleID'";
+$sql = "SELECT * FROM healthnews where itemID = '$_selectedArticle'";
 $result = $conn->query($sql);
 
 while($row = $result->fetch_array())
