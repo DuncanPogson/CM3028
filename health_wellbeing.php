@@ -5,6 +5,8 @@
  * Date: 28/11/2016
  * Time: 20:59
  */
+session_start();
+
 include ("Database/LoginSystem/DB_Connect.php");
 include ("header.php");
 echo "
@@ -21,9 +23,13 @@ while($row = $result->fetch_array())
     $articleName = $row['title'];
     $articleAuthor = $row['userID'];
 
+    //Pass the selected article variable onto the next page
+    $_SESSION['selectedArticle'] = $articleID;
+
     echo "<li><a href='health_article.php/{$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
 
 }
+
 echo "
 </main>
 ";

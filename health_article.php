@@ -5,6 +5,10 @@
  * Date: 28/11/2016
  * Time: 21:25
  */
+session_start();
+
+$_selectedArticle = $_SESSION['selectedArticle'];
+
 include ("Database/LoginSystem/DB_Connect.php");
 include ("header.php");
 echo "
