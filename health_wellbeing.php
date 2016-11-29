@@ -22,7 +22,6 @@ while($row = $result->fetch_array())
     $articleAuthor = $row['userID'];
     //$authNamSql = "SELECT 'username' FROM users WHERE userID ='" . $articleAuthor ."'";
     $authorNameQuery = "SELECT username FROM users WHERE userID ='" . $articleAuthor . "'";
-    echo $authorNameQuery;
     $result = mysql_query($authorNameQuery);
 
     echo "<li><a href='health_wellbeing.php/{$articleID}'>{$articleName}</a> by {$result}</li>";
