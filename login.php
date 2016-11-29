@@ -9,29 +9,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("header.php");
     //html code to collect information from a form
     ?>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Setting title of page-->
+        <title>Login Page</title>
+    </head>
+
     <main>
         <form action="login.php" method="post">
-            <input type="text" name="username" placeholder="username">
+            Name:<br>
+            <input type="text" name="login_username" placeholder="Username">
             <br>
-            <input type="password" name="password" placeholder="password">
-            <br>
+            Password:<br>
+            <input type="password" name="login_password" placeholder="Password">
+            <br><br>
             <p><input type="submit" value="Login"></p>
         </form>
     </main>
+    </html>
     <?
     //
     include("footer.php");
+
+
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //connect to the database
     include("Database/LoginSystem/DB_Connect.php");
-
     //saving user input as variables
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    function checklogin($username, $password, $conn)
+    $_username = $_POST["login_username"];
+    $_password = $_POST["login_password"];
+
+    function check_login($_username, $_password, $conn)
     {
         //sql query to test the username and password against ones already in the database
-        $sql = "SELECT * FROM users WHERE username='" . $username . "' AND password='" . $password . "'";
+        $sql = "SELECT * FROM users WHERE username='" . $_username . "' AND password='" . $_password . "'";
 
         //run the sql script
         $result = $conn->query($sql);
@@ -40,12 +52,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
         return false;
     }
-    if (checklogin($username, $password, $conn)) {
+    if (check_login($_username, $_password, $conn)) {
         session_start();
-        $_SESSION['username'] = $username;
-        header("home.php");
+        $_SESSION['login_username'] = $_username;
+        header("location:home.php");
     } else {
-        header("login.php");
+        print('incorrect username or password');
+        header("");
     }
 } else {
     // nothing works
