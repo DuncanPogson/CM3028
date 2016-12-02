@@ -10,11 +10,11 @@ session_start()
 if
 (isset
 ($_SESSION
-    ['username']))
+    ['login_username']))
 {
     unset
     ($_SESSION
-        ['username'])
+        ['login_username'])
         ;
 }
 header("home.php");
