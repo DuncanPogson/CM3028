@@ -24,7 +24,7 @@ session_start();
             <li><a href="about.php">about</a></li>
             <li><a href="contact.php">contact</a></li>
             <?
-            if (isset($_SESSION['username'])) {
+            if (isset($_SESSION['login_username'])) {
                 echo "<li><a href='logout.php'>Logout</a></li>";
             } else {
                 echo "<li><a href='login.php'>Login</a></li>";
