@@ -23,8 +23,7 @@ while($row = $result->fetch_array())
     $articleName = $row['title'];
     $articleAuthor = $row['userID'];
 
-    //Pass the selected article variable onto the next page
-    $_SESSION['selectedArticle'] = $articleID;
+    
 
     echo "<li><a href='health_article.php/{$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
 
