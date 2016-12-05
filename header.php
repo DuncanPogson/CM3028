@@ -85,10 +85,6 @@ session_start();
                             </button></li>";
                     }
                     ?>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
-                                Login
-                            </button></li>
                     </ul>
                 </div>
             </div>

@@ -66,9 +66,17 @@
                          </li>-->
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
-                                    Login
-                                </button></li>
+                        <?
+                        if (isset($_SESSION['login_username'])) {
+                            echo "<li><button type=\"button\" class=\"btn btn-link\" data-toggle=\"modal\" data-target=\"#myModal\">
+                                Login
+                            </button></li>";
+                        } else {
+                            echo "<li><button type=\"button\" class=\"btn btn-link\" data-toggle=\"modal\" data-target=\"#myModal\">
+                                Logout
+                            </button></li>";
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>
