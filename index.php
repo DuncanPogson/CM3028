@@ -110,7 +110,7 @@
             <img class src="images/Clubs.jpg" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Find a Club</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore clubs</a></p>
                 </div>
             </div>
         </div>
@@ -118,8 +118,8 @@
             <img class="third-slide" src="images/zen.jpg" alt="Third slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <h1>Health And Wellbeing</h1>
+                    <p>Tips for healthy life</p>
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
                 </div>
             </div>
