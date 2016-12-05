@@ -72,8 +72,8 @@
                                 Login
                             </button></li>";
                         } else {
-                            echo "<li><a href=\"logout.php\">Health and Wellbeing</a>
-                                Logout
+                            echo "<li><a href=\"logout.php\">Logout</a>
+          
                             </li>";
                         }
                         ?>
