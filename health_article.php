@@ -26,16 +26,11 @@ if (isset($_GET['ID'])) {
         $_articleAuthor = $row['userID'];
         $_articleText = $row['content'];
 
-        echo "
-        <article>
-        <h2>{$_articleName}</h2>
-        <h3>by {$_articleAuthor}</h3>
-        {$_articleText}
-        </article>";
+        echo "<h2>{$_articleName}</h2>
+                <h3>by {$_articleAuthor}</h3>
+                    <h4>{$_articleText}</h4>
+            ";
     }
-    echo "
-    </main>
-    ";
 
 }else{
     // Fallback behaviour
