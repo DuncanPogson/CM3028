@@ -15,7 +15,7 @@ echo "
 
 if (isset($_GET['ID'])) {
     echo $_GET['ID'];
-    $_selected_article = (int)'ID';
+    $_selected_article = 'ID';
 }else{
     // Fallback behaviour
     echo "Uh Oh, theres been an error, please go back and select a new article";
