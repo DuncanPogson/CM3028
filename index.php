@@ -97,7 +97,7 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <img class="first-slide" src="images/unnamed.jpg" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Portlethen's guide to healthy living and keeping active</h1>
@@ -150,12 +150,7 @@
             <div class="modal-body">
 
                 <?php
-                /**
-                 * Created by PhpStorm.
-                 * User: 1405466
-                 * Date: 29/11/2016
-                 * Time: 14:04
-                 */
+
                 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 
