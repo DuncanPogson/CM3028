@@ -11,33 +11,37 @@ include ("Database/LoginSystem/DB_Connect.php");
 include ("header.php");
 
 if (isset($_GET['ID'])) {
-    echo $_GET['ID'];
+//    echo $_GET['ID'];
     $_selected_club = $_GET['ID'];
 }else{
     // Fallback behaviour
     echo "Uh Oh, this club seems to be missing, please go back and pick another club.";
 }
 
-$sql = "SELECT * FROM clubs where clubID ='" . $_selected_club . "'";
+$sql = "SELECT * FROM club where clubID ='" . $_selected_club . "'";
 $result = $conn->query($sql);
 
 while($row = $result->fetch_array())
     {
-        $_articleName = $row['title'];
-        $_articleAuthor = $row['userID'];
-        $_articleText = $row['content'];
+        $_clubName = $row['clubName'];
+        $_clubGenre = $row['genre'];
+        $_clubEmail = $row['clubEmail'];
+        $_clubWebsite = $row['website'];
+        $_contactName = $row['contactName'];
+        $_contactNo = $row['contactNo'];
+        $_description = $row['description'];
 
         echo "
         <article>
-            Title: {$clubName} \n
-            Genre: {$clubGenre} \n
+            Title: {$_clubName} \n
+            Genre: {$_clubGenre} \n
             Contact Us: \n
-            Email: {$clubEmail} \n
-            Website: {$clubWebsite} \n
-            Contact: {$clubContact} \n
-            Phone Number: {$clubContactNo} \n
+            Contact Name: {$_contactName} \n
+            Email: {$_clubEmail} \n
+            Website: {$_clubWebsite} \n
+            Phone Number: {$_contactNo} \n
             Description: \n
-            {$clubDescription}
+            {$_description}
         </article>";
     }
 

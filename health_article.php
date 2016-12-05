@@ -11,7 +11,7 @@ include ("Database/LoginSystem/DB_Connect.php");
 include ("header.php");
 
 if (isset($_GET['ID'])) {
-    echo $_GET['ID'];
+//    echo $_GET['ID'];
     $_selected_article = $_GET['ID'];
 }else{
     // Fallback behaviour
