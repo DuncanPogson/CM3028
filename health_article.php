@@ -13,26 +13,32 @@ echo "
 <main>
 ";
 
-$_selected_article = $_GET[$articleID];
+if (isset($_GET['articleID'])) {
+    echo $_GET['$articleID'];
 
-$sql = "SELECT * FROM healthnews where itemID = '$_selected_article'";
-$result = $conn->query($sql);
+    $sql = "SELECT * FROM healthnews where itemID = '$articleID'";
+    $result = $conn->query($sql);
 
-while($row = $result->fetch_array())
-{
-    $_articleID = $row['itemID'];
-    $_articleName = $row['title'];
-    $_articleAuthor = $row['userID'];
-    $_articleText = $row['content'];
+    while($row = $result->fetch_array())
+    {
+        $_articleID = $row['itemID'];
+        $_articleName = $row['title'];
+        $_articleAuthor = $row['userID'];
+        $_articleText = $row['content'];
 
+        echo "
+        <article>
+        <h2>{$_articleName}</h2>
+        <h3>by {$_articleAuthor}</h3>
+        {$_articleText}
+        </article>";
+    }
     echo "
-<article>
-    <h2>{$_articleName}</h2>
-    <h3>by {$_articleAuthor}</h3>
-    {$_articleText}
- </article>";
+    </main>
+    ";
+
+}else{
+    // Fallback behaviour goes here
 }
-echo "
-</main>
-";
+
 include ("footer.php");
