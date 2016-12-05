@@ -31,9 +31,17 @@ while($row = $result->fetch_array())
 
 }
 
-echo "
 //Making use of twitters embedded timeline function.
-    <a class=\"twitter-timeline\" href=\"https://twitter.com/NHSGrampian\">Tweets by NHSGrampian</a> <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>
+echo "
+
+    <a class=\"twitter-timeline\"
+    href=\"https://twitter.com/NHSGrampian\"
+    data-chrome=\"noborders\">
+    data-width=\"300\"
+    data-height=\"300\">
+    Tweets by NHSGrampian
+    </a>
+ 
 </main>
 ";
 include ("footer.php");
