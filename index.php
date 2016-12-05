@@ -72,9 +72,9 @@
                                 Login
                             </button></li>";
                         } else {
-                            echo "<li><button type=\"button\" class=\"btn btn-link\" data-toggle=\"modal\" data-target=\"#myModal\">
+                            echo "<li><a href=\"logout.php\">Health and Wellbeing</a>
                                 Logout
-                            </button></li>";
+                            </li>";
                         }
                         ?>
                     </ul>
