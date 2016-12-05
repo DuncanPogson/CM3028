@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         <title>Login Page</title>
     </head>
 
-    <li><a href="Database/LoginSystem/SignUp.html">contact</a></li>
+    <li><a href="Database/LoginSystem/SignUp.html">Sign Up</a></li>
 
     <main>
         <form action="login.php" method="post">
