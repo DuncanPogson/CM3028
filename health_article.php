@@ -14,7 +14,7 @@ echo "
 ";
 
 if (isset($_GET['ID'])) {
-    echo $_GET['ID'];
+    //echo $_GET['ID'];
 
     $sql = "SELECT * FROM healthnews where itemID = 'ID'";
     $result = $conn->query($sql);
@@ -38,7 +38,8 @@ if (isset($_GET['ID'])) {
     ";
 
 }else{
-    // Fallback behaviour goes here
+    // Fallback behaviour
+    echo "Uh Oh, theres been an error, please go back and select a new article";
 }
 
 include ("footer.php");
