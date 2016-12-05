@@ -73,7 +73,7 @@
                         } else {
 
                             echo "<li><a href=\"#\" data-toggle=\"modal\" data-target=\"#myModal\">Login</a>
-                                Login
+                         
                             </button></li>";
                         }
                         ?>
