@@ -14,22 +14,26 @@ echo "
 ";
 
 if (isset($_GET['ID'])) {
-    //echo $_GET['ID'];
+    echo $_GET['ID'];
+    $_selected_article = 'ID';
 
-    $sql = "SELECT * FROM healthnews where itemID = 'ID'";
+    $sql = "SELECT * FROM healthnews where itemID = $_selected_article";
     $result = $conn->query($sql);
 
     while($row = $result->fetch_array())
     {
-        $_articleID = $row['itemID'];
         $_articleName = $row['title'];
         $_articleAuthor = $row['userID'];
         $_articleText = $row['content'];
 
-        echo "<h2>{$_articleName}</h2>
-                <h3>by {$_articleAuthor}</h3>
-                    <h4>{$_articleText}</h4>
-            ";
+
+        echo "
+        <article>
+             <h2>{$_articleName}</h2>
+             <h3>by {$_articleAuthor}</h3>
+             {$_articleText}
+        </article>";
+
     }
 
 }else{

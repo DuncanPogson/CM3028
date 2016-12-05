@@ -11,11 +11,11 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Active Portlethen</title>
+    <title>Go Portlethen</title>
 </head>
 <body>
 <header>
-    <h1>Portlethen's guide to healthy living and keeping active</h1>
+    <h1>Go Portlethen</h1>
     <nav>
         <ul>
             <li><a href="home.php">Home</a></li>
