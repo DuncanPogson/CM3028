@@ -127,7 +127,7 @@
                             <title>Login Page</title>
                         </head>
 
-                        <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signUp">
+                        <p><button type="button" class="btn btn-primary btn-md, close" data-toggle="modal" data-target="#signUp" data-dismiss="modal" aria-label="Close">
                                     Sign Up
                                 </button></p>
 
