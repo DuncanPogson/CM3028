@@ -101,14 +101,13 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1 style="color:black;">Portlethen's guide to healthy living and keeping active</h1>
-                    <p style="color:black;">Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
                     <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class src="images/ClubsBanner.jpg" alt="logo" style="width:304px;height:228px;">
+            <img class src="images/Clubs.jpg" alt="logo" style="width:304px;height:228px;">
             <div class="container">
                 <div class="carousel-caption">
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Find a Club</a></p>
