@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * Created by Phd
  * User: duncanpogson
  * Date: 28/11/2016
  * Time: 20:59
@@ -32,6 +32,8 @@ while($row = $result->fetch_array())
 }
 
 echo "
+//Making use of twitters embedded timeline function.
+    <a class=\"twitter-timeline\" href=\"https://twitter.com/NHSGrampian\">Tweets by NHSGrampian</a> <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>
 </main>
 ";
 include ("footer.php");
