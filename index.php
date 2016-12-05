@@ -106,6 +106,7 @@
                 </div>
             </div>
         </div>
+        <!-- boom -->
         <div class="item">
             <img class src="images/Clubs.jpg" alt="Second slide">
             <div class="container">
