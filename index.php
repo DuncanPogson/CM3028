@@ -132,7 +132,7 @@
                             <title>Login Page</title>
                         </head>
 
-                        <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUp" data-dismiss="modal" aria-label="Close">
+                        <p><button type="button" class="btn btn-success" data-toggle="modal" data-target="#signUp" data-dismiss="modal" aria-label="Close">
                                     Sign Up
                                 </button></p>
 
@@ -236,7 +236,7 @@
             </div>
         </div>
     </div>
-        <!--<div class="item">
+        <div class="item">
             <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
@@ -256,7 +256,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -264,7 +264,7 @@
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-    </a>-->
+    </a>
 </div><!-- /.carousel -->
 
 
