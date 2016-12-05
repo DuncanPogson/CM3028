@@ -107,7 +107,7 @@
             </div>
         </div>
         <div class="item">
-            <img class src="images/Clubs.jpg" alt="logo" style="width:304px;height:228px;">
+            <img class src="images/Clubs.jpg" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Find a Club</a></p>
