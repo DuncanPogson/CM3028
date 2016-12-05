@@ -25,7 +25,7 @@ while($row = $result->fetch_array())
 
     
 
-    echo "<li><a href='health_article.php/{$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
+    echo "<li><a href='health_article.php/?ID={$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
 
 }
 

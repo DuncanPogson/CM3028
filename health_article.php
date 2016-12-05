@@ -13,10 +13,10 @@ echo "
 <main>
 ";
 
-if (isset($_GET['$articleID'])) {
-    echo $_GET['$articleID'];
+if (isset($_GET['ID'])) {
+    echo $_GET['ID'];
 
-    $sql = "SELECT * FROM healthnews where itemID = '$articleID'";
+    $sql = "SELECT * FROM healthnews where itemID = 'ID'";
     $result = $conn->query($sql);
 
     while($row = $result->fetch_array())
