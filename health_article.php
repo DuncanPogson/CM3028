@@ -13,7 +13,7 @@ echo "
 <main>
 ";
 
-if (isset($_GET['articleID'])) {
+if (isset($_GET['$articleID'])) {
     echo $_GET['$articleID'];
 
     $sql = "SELECT * FROM healthnews where itemID = '$articleID'";
