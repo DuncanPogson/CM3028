@@ -7,12 +7,17 @@
  * Time: 20:48
  */
 
+session_start();
+
 //include the header
 include ("header.php");
+
+include("Database/LoginSystem/DB_Connect.php");
 
 echo "
 
 <main>
+
 
 <h2>Sportlethen Page</h2>
 
@@ -22,7 +27,39 @@ Our website is a single access point to find out more about the fantastic sporti
 <p>Sportlethen launched on the 13th August 2016 at Portlethen Academy, 
 which gave people the opportunity to take part in taster sessions of the different sports they can take up in the local area. </p>
 
+";
+
+$sql = "SELECT * FROM clubs where clubID = '$_selectedClub'";
+$result = $conn->query($sql);
+
+while($row = $result->fetch_array())
+{
+    $clubID = $row['clubID'];
+    $clubGenre = $row['genre'];
+    $clubName = $row['clubName'];
+    $clubEmail = $row['clubEmail'];
+    $clubDescription = $row['description'];
+    $clubWebsite = $row['website'];
+    $clubContact = $row['contactName'];
+    $clubContactNo = $row['contactNo'];
+    $clubAdmin = $row['userID'];
+}
+echo "
+<article>
+    <h3>{$clubName}</h3>
+    <h4>{$clubGenre}</h4>
+    <h5>{$clubEmail}</h5>
+    <h6>{$clubWebsite}</h6>
+    <h7>{$clubContact}</h7>
+    <h8>{$clubContactNo}</h8>
+    {$clubDescription}
+ 
+ </article>
+ ";
+
+echo "
 </main>
 ";
 //include the footer
 include ("footer.php");
+
