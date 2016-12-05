@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (check_login($_username, $_password, $conn)) {
         session_start();
         $_SESSION['login_username'] = $_username;
-        header("location:home.php");
+        header("location:index.php");
     } else {
         print('incorrect username or password');
         header("");
