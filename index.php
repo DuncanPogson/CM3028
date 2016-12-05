@@ -51,7 +51,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#clubs">Clubs</a></li>
-                        <li><a href="#login">Health</a></li>
+                        <li><a href="#HealthAndWellbeing">Health and Wellbeing</a></li>
                         <!-- <li class="dropdown">
                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                              <ul class="dropdown-menu">
@@ -89,7 +89,7 @@
                 <div class="carousel-caption">
                     <h1>Example headline.</h1>
                     <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="login.php" role="button">Sign up today</a></p>
                 </div>
             </div>
         </div>
