@@ -127,7 +127,9 @@
                             <title>Login Page</title>
                         </head>
 
-                        <li><a href="Database/LoginSystem/SignUp.html">Sign Up</a></li>
+                        <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signUp">
+                                    Sign Up
+                                </button></p>
 
                         <main>
                             <form action="login.php" method="post">
@@ -187,6 +189,49 @@
         </div>
     </div>
 
+    <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+                </div>
+                <div class="modal-body">
+
+                    <header>
+                        <h1>Create an account to use the site</h1>
+                        <p><a href="../../home.php">Home</a></p>
+                    </header>
+
+                    <main>
+                        <form action="AddNewUser.php" method="post">
+                            <input type="text" name="username" placeholder="Username"><br>
+                            <br>
+                            <input type="text" name="firstName" placeholder="First Name"><br>
+                            <br>
+                            <input type="text" name="lastName" placeholder="Last Name"><br>
+                            <br>
+                            <input type="date" name="dateOfBirth" placeholder="00/00/0000"><br>
+                            <br>
+                            <input type="text" name="address" placeholder="Address"><br>
+                            <br>
+                            <input type="email" name="Email" placeholder="example@example.com"><br>
+                            <br>
+                            <input type="password" name="Password" placeholder="password"><br>
+                            <br><br>
+                            <input type="submit" text="Submit">
+                        </form>
+                    </main>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
         <!--<div class="item">
             <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
             <div class="container">
