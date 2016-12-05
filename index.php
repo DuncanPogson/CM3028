@@ -108,12 +108,10 @@
             </div>
         </div>
         <div class="item">
-            <img class src="1 Dizzi's World (2).jpg" alt="logo" style="width:304px;height:228px;">
+            <img class src="images/ClubsBanner.jpg" alt="logo" style="width:304px;height:228px;">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Find a Club</a></p>
                 </div>
             </div>
         </div>
