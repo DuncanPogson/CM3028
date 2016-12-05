@@ -21,7 +21,9 @@ $_accessLevel = 1;
 $sql = "INSERT INTO users (email, username, password, dateOfBirth, address, firstName, lastName, accessLevel) VALUES ('$_email', '$_username', '$_password', '$_dateOfBirth', '$_address', '$_firstName', '$_lastName', '$_accessLevel')";
 
 if(mysqli_query($conn, $sql)){
+    header("location:../../login.php");
 }else{
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    echo "invalid information, please check your details and try again";
 }
 
