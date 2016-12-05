@@ -11,5 +11,6 @@ $result = $db->query($sql_query);
 
 while($row = $result->fetch_array()){
 
-    echo "<p>".$row['eventName']."</p>";
+    echo "<p>".$row['eventID'] . " ". $row['eventName'] . " ". $row['date'] . " ". $row['time'] . " ". $row['description']."</p>";
 }
+
