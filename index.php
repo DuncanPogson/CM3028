@@ -87,10 +87,10 @@
             <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Example headline.</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                    <h1>Portlethen's guide to healthy living and keeping active</h1>
+                    <p>Sign Up or Login</p>
                     <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                            Sign Up
+                            Sign In
                         </button></p>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                      */
                     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
-                      
+
                         ?>
                         <html lang="en">
                         <head>
