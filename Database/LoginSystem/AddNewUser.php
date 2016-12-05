@@ -8,19 +8,20 @@
 
 include("DB_Connect.php");
 
-$fullName = $_POST["FullName"];
-$email = $_POST["Email"];
-$password = $_POST["Password"];
-$userID = 1;
-$accessLevel = 1;
+$_username = $_POST["username"];
+$_email = $_POST["Email"];
+$_password = $_POST["Password"];
+$_dateOfBirth = $_POST["dateOfBirth"];
+$_address = $_POST["address"];
+$_firstName = $_POST["firstName"];
+$_lastName = $_POST["lastName"];
+$_accessLevel = 1;
 
 
-$sql = "INSERT INTO users (UserEmail, userName, UserPassword, UserId, AccessLevel) VALUES ('$email', '$fullName', '$password', '$userID', '$accessLevel')";
+$sql = "INSERT INTO users (email, username, password, dateOfBirth, address, firstName, lastName, accessLevel) VALUES ('$_email', '$_username', '$_password', '$_dateOfBirth', '$_address', '$_firstName', '$_lastName', '$_accessLevel')";
 
-if(mysqli_query($db, $sql)){
+if(mysqli_query($conn, $sql)){
 }else{
-    echo "Error: " . $sql . "<br>" . mysqli_error($db);
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-header("location:CM3028/index.php");
-?>
