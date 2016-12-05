@@ -127,7 +127,7 @@
                             <title>Login Page</title>
                         </head>
 
-                        <p><button type="button" class="btn btn-primary btn-md, close" data-toggle="modal" data-target="#signUp" data-dismiss="modal" aria-label="Close">
+                        <p><button type="button" class="btn btn-primary btn-lg, close" data-toggle="modal" data-target="#signUp" data-dismiss="modal" aria-label="Close">
                                     Sign Up
                                 </button></p>
 
@@ -206,7 +206,7 @@
                     </header>
 
                     <main>
-                        <form action="AddNewUser.php" method="post">
+                        <form action="database/loginsystem/AddNewUser.php" method="post">
                             <input type="text" name="username" placeholder="Username"><br>
                             <br>
                             <input type="text" name="firstName" placeholder="First Name"><br>
@@ -227,7 +227,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                   
                 </div>
             </div>
         </div>
