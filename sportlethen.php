@@ -11,15 +11,13 @@ session_start();
 
 //include the header
 include ("header.php");
-
 include("Database/LoginSystem/DB_Connect.php");
 
 echo "
 
 <main>
 
-
-<h2>Sportlethen Page</h2>
+<h2>Sportlethen</h2>
 
 <p>Sportlethen CSH is an association of local clubs who are working together to develop safe and fun sport and fitness activities within their local area. 
 Our website is a single access point to find out more about the fantastic sporting opportunities in our area. </p>
@@ -29,7 +27,7 @@ which gave people the opportunity to take part in taster sessions of the differe
 
 ";
 
-$sql = "SELECT * FROM clubs where clubID = '$_selectedClub'";
+$sql = "SELECT * FROM clubs";
 $result = $conn->query($sql);
 
 while($row = $result->fetch_array())
@@ -43,23 +41,15 @@ while($row = $result->fetch_array())
     $clubContact = $row['contactName'];
     $clubContactNo = $row['contactNo'];
     $clubAdmin = $row['userID'];
+
+
+    echo "<li><a href='club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubContactNo}, Genre: {$clubGenre}. </li>";
 }
-echo "
-<article>
-    <h3>{$clubName}</h3>
-    <h4>{$clubGenre}</h4>
-    <h5>{$clubEmail}</h5>
-    <h6>{$clubWebsite}</h6>
-    <h7>{$clubContact}</h7>
-    <h8>{$clubContactNo}</h8>
-    {$clubDescription}
- 
- </article>
- ";
 
 echo "
 </main>
 ";
+
 //include the footer
 include ("footer.php");
 

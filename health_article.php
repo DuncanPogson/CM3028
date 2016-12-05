@@ -9,13 +9,14 @@ session_start();
 
 include ("Database/LoginSystem/DB_Connect.php");
 include ("header.php");
-echo "
-<main>
-";
 
 if (isset($_GET['ID'])) {
     echo $_GET['ID'];
     $_selected_article = $_GET['ID'];
+}else{
+    // Fallback behaviour
+    echo "Uh Oh, theres been an error, please go back and select a new article";
+}
 
     $sql = "SELECT * FROM healthnews where itemID ='" . $_selected_article . "'";
     $result = $conn->query($sql);
@@ -35,11 +36,6 @@ if (isset($_GET['ID'])) {
         </article>";
 
     }
-
-}else{
-    // Fallback behaviour
-    echo "Uh Oh, theres been an error, please go back and select a new article";
-}
 
 
 include ("footer.php");
