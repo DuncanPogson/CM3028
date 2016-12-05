@@ -140,21 +140,41 @@
             </div>
             <div class="modal-body">
 
-                <main>
-                    <form action="login.php" method="post">
-                        Name:<br>
-                        <input type="text" name="login_username" placeholder="Username">
-                        <br>
-                        Password:<br>
-                        <input type="password" name="login_password" placeholder="Password">
-                        <br><br>
-                        <p><input type="submit" value="Login"></p>
-                    </form>
-                </main>
-                </html>
-                <?
-                //
-                include("footer.php");
+                <?php
+                /**
+                 * Created by PhpStorm.
+                 * User: 1405466
+                 * Date: 29/11/2016
+                 * Time: 14:04
+                 */
+                if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+                    include("header.php");
+                    //html code to collect information from a form
+                    ?>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <!--Setting title of page-->
+                        <title>Login Page</title>
+                    </head>
+
+                    <li><a href="Database/LoginSystem/SignUp.html">Sign Up</a></li>
+
+                    <main>
+                        <form action="login.php" method="post">
+                            Name:<br>
+                            <input type="text" name="login_username" placeholder="Username">
+                            <br>
+                            Password:<br>
+                            <input type="password" name="login_password" placeholder="Password">
+                            <br><br>
+                            <p><input type="submit" value="Login"></p>
+                        </form>
+                    </main>
+                    </html>
+                    <?
+                    //
+                    include("footer.php");
 
 
                 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -188,7 +208,7 @@
                     // nothing works
                     print('all kinds of errors');
                 }
-                        ?>
+                ?>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
