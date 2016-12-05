@@ -105,7 +105,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    <h4 class="modal-title" id="myModalLabel">Sign In</h4>
                 </div>
                 <div class="modal-body">
 
@@ -117,8 +117,8 @@
                      * Time: 14:04
                      */
                     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-                        include("header.php");
-                        //html code to collect information from a form
+
+                      
                         ?>
                         <html lang="en">
                         <head>
