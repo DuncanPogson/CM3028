@@ -15,7 +15,7 @@ $result = $conn->query($sql_query);
 
 while($row = $result->fetch_array()){
 
-    echo "<p>".$row['eventID'] . " ". $row['eventName'] . " ". $row['date'] . " ". $row['time' * -1] . " ". $row['description']."</p>";
+    echo "<p>".$row['eventID'] . " ". $row['eventName'] . " ". $row['date'] . " ". $row['time'] . " ". $row['description']."</p>";
 }
 //include("footer.php");
 
