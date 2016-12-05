@@ -52,7 +52,6 @@
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#clubs">Clubs</a></li>
                         <li><a href="#HealthAndWellbeing">Health and Wellbeing</a></li>
-                        <li style="text-align: right"><a href="#myModal">Login</a></li>
                         <!-- <li class="dropdown">
                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                              <ul class="dropdown-menu">
@@ -65,6 +64,11 @@
                                  <li><a href="#">One more separated link</a></li>
                              </ul>
                          </li>-->
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    Sign In
+                                </button></p></li>
                     </ul>
                 </div>
             </div>
