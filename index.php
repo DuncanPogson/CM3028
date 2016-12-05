@@ -68,7 +68,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <?
                         if (isset($_SESSION['login_username'])) {
-                            echo "<li><button type=\"button\" class=\"btn btn-link\" data-toggle=\"modal\" data-target=\"#myModal\">
+                            echo "<li><a href='#myModal'>Login</a> <!--data-toggle=\"modal\" data-target=\"#myModal\"> -->
                                 Login
                             </button></li>";
                         } else {
