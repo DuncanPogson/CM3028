@@ -15,13 +15,13 @@ echo "
 
 if (isset($_GET['ID'])) {
     echo $_GET['ID'];
-    $_selected_article = 'ID';
+    $_selected_article = (int)'ID';
 }else{
     // Fallback behaviour
     echo "Uh Oh, theres been an error, please go back and select a new article";
 }
 
-    $sql = "SELECT * FROM healthnews where itemID = 'ID'";
+    $sql = "SELECT * FROM healthnews where itemID = '$_selected_article'";
     $result = $conn->query($sql);
 
     while($row = $result->fetch_array())
