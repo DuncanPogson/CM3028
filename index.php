@@ -127,7 +127,7 @@
                             <title>Login Page</title>
                         </head>
 
-                        <p><button type="button" class="btn btn-primary btn-lg, close" data-toggle="modal" data-target="#signUp" data-dismiss="modal" aria-label="Close">
+                        <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUp" data-dismiss="modal" aria-label="Close">
                                     Sign Up
                                 </button></p>
 
@@ -183,7 +183,6 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
@@ -227,7 +226,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                   
+
                 </div>
             </div>
         </div>
