@@ -71,8 +71,8 @@
                             echo  "<li><a href='logout.php'>Logout</a>          
                             </li>";
                         } else {
-                           
-                            echo "<li><button type=\"button\" class=\"btn btn-link\" data-toggle=\"modal\" data-target=\"#myModal\">
+
+                            echo "<li><a href=\"#\" data-toggle=\"modal\" data-target=\"#myModal\">Login</a>
                                 Login
                             </button></li>";
                         }
