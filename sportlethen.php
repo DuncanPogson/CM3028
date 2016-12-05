@@ -16,7 +16,7 @@ echo "
 
 <h2>Sportlethen Page</h2>
 
-<p>Sportlethen CSH is an association of local clubs who are working together to develop safe and fun sport and fitness activities within their local area. 
+<p>Sportlethen CSH is an Association of local clubs who are working together to develop safe and fun sport and fitness activities within their local area. 
 Our website is a single access point to find out more about the fantastic sporting opportunities in our area. </p>
 
 <p>Sportlethen launched on the 13th August 2016 at Portlethen Academy, 
