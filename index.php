@@ -97,10 +97,10 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="first-slide" src="sportsz.jpg" alt="First slide">
+            <img class="first-slide" src="images/sportsz.jpg" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Portlethen's guide to healthy living and keeping active</h1>
+                    <h1 style="color:cadetblue;">Portlethen's guide to healthy living and keeping active</h1>
                     <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
                 </div>
