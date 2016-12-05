@@ -17,4 +17,4 @@ if
         ['login_username'])
         ;
 }
-header("home.php");
+header("location:home.php");
