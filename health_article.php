@@ -13,7 +13,7 @@ echo "
 <main>
 ";
 
-$_selected_article = $_GET["itemID"];
+$_selected_article = $_GET['itemID'];
 
 $sql = "SELECT * FROM healthnews where itemID = '$_selected_article'";
 $result = $conn->query($sql);
