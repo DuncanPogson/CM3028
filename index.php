@@ -203,10 +203,10 @@
                     if (check_login($_username, $_password, $conn)) {
                         session_start();
                         $_SESSION['login_username'] = $_username;
-                        header("location:#myModal");
+                        header("location:index.php");
                     } else {
                         print('incorrect username or password');
-                        header("");
+                        header("location:#myModal");
                     }
                 } else {
                     // nothing works
