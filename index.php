@@ -68,12 +68,13 @@
                     <ul class="nav navbar-nav navbar-right">
                         <?
                         if (isset($_SESSION['login_username'])) {
-                            echo "<li><a href='#myModal'>Login</a> <!--data-toggle=\"modal\" data-target=\"#myModal\"> -->
+                            echo  "<li><a href='logout.php'>Logout</a>          
+                            </li>";
+                        } else {
+                           
+                            echo "<li><button type=\"button\" class=\"btn btn-link\" data-toggle=\"modal\" data-target=\"#myModal\">
                                 Login
                             </button></li>";
-                        } else {
-                            echo "<li><a href='logout.php'>Logout</a>          
-                            </li>";
                         }
                         ?>
                     </ul>
