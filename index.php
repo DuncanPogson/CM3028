@@ -97,7 +97,7 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="first-slide" src="images/sports.jpg" alt="First slide">
+            <img class="first-slide" src="images/sportsz.jpg" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Portlethen's guide to healthy living and keeping active</h1>
