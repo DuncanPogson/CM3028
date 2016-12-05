@@ -66,8 +66,8 @@
                          </li>-->
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                                    Sign In
+                        <li><p><button type="button" class="btn Secondary" data-toggle="modal" data-target="#myModal">
+                                    Login
                                 </button></p></li>
                     </ul>
                 </div>
