@@ -13,23 +13,23 @@ echo "
 <main>
 ";
 
-$_selected_article = $_GET["itemID"];
+$_selected_article = $_GET[$articleID];
 
-$sql = "SELECT * FROM healthnews where itemID = '$_selectedArticle'";
+$sql = "SELECT * FROM healthnews where itemID = '$_selected_article'";
 $result = $conn->query($sql);
 
 while($row = $result->fetch_array())
 {
-    $articleID = $row['itemID'];
-    $articleName = $row['title'];
-    $articleAuthor = $row['userID'];
-    $articleText = $row['content'];
+    $_articleID = $row['itemID'];
+    $_articleName = $row['title'];
+    $_articleAuthor = $row['userID'];
+    $_articleText = $row['content'];
 
     echo "
 <article>
-    <h2>{$articleName}</h2>
-    <h3>by {$articleAuthor}</h3>
-    {$articleText}
+    <h2>{$_articleName}</h2>
+    <h3>by {$_articleAuthor}</h3>
+    {$_articleText}
  </article>";
 }
 echo "
