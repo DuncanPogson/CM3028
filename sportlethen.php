@@ -9,7 +9,6 @@
 
 session_start();
 
-//include the header
 include ("header.php");
 include("Database/LoginSystem/DB_Connect.php");
 
@@ -27,7 +26,7 @@ which gave people the opportunity to take part in taster sessions of the differe
 
 ";
 
-$sql = "SELECT * FROM clubs";
+$sql = "SELECT * FROM club";
 $result = $conn->query($sql);
 
 while($row = $result->fetch_array())
@@ -36,14 +35,8 @@ while($row = $result->fetch_array())
     $clubGenre = $row['genre'];
     $clubName = $row['clubName'];
     $clubEmail = $row['clubEmail'];
-    $clubDescription = $row['description'];
-    $clubWebsite = $row['website'];
-    $clubContact = $row['contactName'];
-    $clubContactNo = $row['contactNo'];
-    $clubAdmin = $row['userID'];
 
-
-    echo "<li><a href='club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubContactNo}, Genre: {$clubGenre}. </li>";
+    echo "<li><a href='club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>";
 }
 
 echo "
