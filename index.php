@@ -117,14 +117,7 @@
                             include("header.php");
                             //html code to collect information from a form
                             ?>
-                            <html lang="en">
-                            <head>
-                                <meta charset="UTF-8">
-                                <!--Setting title of page-->
-                                <title>Login Page</title>
-                            </head>
-
-                            <li><a href="Database/LoginSystem/SignUp.html">Sign Up</a></li>
+                        
 
                             <main>
                                 <form action="login.php" method="post">
