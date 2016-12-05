@@ -100,8 +100,8 @@
             <img class="first-slide" src="images/unnamed.jpg" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Portlethen's guide to healthy living and keeping active</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                    <h1 style="color:black;">Portlethen's guide to healthy living and keeping active</h1>
+                    <p style="color:black;">Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
                     <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
                 </div>
