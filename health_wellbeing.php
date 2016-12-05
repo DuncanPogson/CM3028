@@ -9,6 +9,7 @@ session_start();
 
 include ("Database/LoginSystem/DB_Connect.php");
 include ("header.php");
+include ("events.php");
 echo "
 <main>
 <h2>Health Articles</h2>
