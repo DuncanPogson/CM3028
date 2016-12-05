@@ -94,97 +94,98 @@
                         </button></p>
                 </div>
             </div>
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                        </div>
-                        <div class="modal-body">
 
-                            <?php
-                            /**
-                             * Created by PhpStorm.
-                             * User: 1405466
-                             * Date: 29/11/2016
-                             * Time: 14:04
-                             */
-                            if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-                                include("header.php");
-                                //html code to collect information from a form
-                                ?>
-                                <html lang="en">
-                                <head>
-                                    <meta charset="UTF-8">
-                                    <!--Setting title of page-->
-                                    <title>Login Page</title>
-                                </head>
+        </div>
+        </div>
+    <!--MODAL-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
 
-                                <li><a href="Database/LoginSystem/SignUp.html">Sign Up</a></li>
+                    <?php
+                    /**
+                     * Created by PhpStorm.
+                     * User: 1405466
+                     * Date: 29/11/2016
+                     * Time: 14:04
+                     */
+                    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+                        include("header.php");
+                        //html code to collect information from a form
+                        ?>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <!--Setting title of page-->
+                            <title>Login Page</title>
+                        </head>
 
-                                <main>
-                                    <form action="login.php" method="post">
-                                        Name:<br>
-                                        <input type="text" name="login_username" placeholder="Username">
-                                        <br>
-                                        Password:<br>
-                                        <input type="password" name="login_password" placeholder="Password">
-                                        <br><br>
-                                        <p><input type="submit" value="Login"></p>
-                                    </form>
-                                </main>
-                                </html>
-                                <?
-                                //
-                                include("footer.php");
+                        <li><a href="Database/LoginSystem/SignUp.html">Sign Up</a></li>
+
+                        <main>
+                            <form action="login.php" method="post">
+                                Name:<br>
+                                <input type="text" name="login_username" placeholder="Username">
+                                <br>
+                                Password:<br>
+                                <input type="password" name="login_password" placeholder="Password">
+                                <br><br>
+                                <p><input type="submit" value="Login"></p>
+                            </form>
+                        </main>
+                        </html>
+                        <?
+                        //
+                        include("footer.php");
 
 
-                            } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                                //connect to the database
-                                include("Database/LoginSystem/DB_Connect.php");
-                                //saving user input as variables
-                                $_username = $_POST["login_username"];
-                                $_password = $_POST["login_password"];
+                    } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                        //connect to the database
+                        include("Database/LoginSystem/DB_Connect.php");
+                        //saving user input as variables
+                        $_username = $_POST["login_username"];
+                        $_password = $_POST["login_password"];
 
-                                function check_login($_username, $_password, $conn)
-                                {
-                                    //sql query to test the username and password against ones already in the database
-                                    $sql = "SELECT * FROM users WHERE username='" . $_username . "' AND password='" . $_password . "'";
+                        function check_login($_username, $_password, $conn)
+                        {
+                            //sql query to test the username and password against ones already in the database
+                            $sql = "SELECT * FROM users WHERE username='" . $_username . "' AND password='" . $_password . "'";
 
-                                    //run the sql script
-                                    $result = $conn->query($sql);
-                                    while ($row = $result->fetch_array()) {
-                                        return true;
-                                    }
-                                    return false;
-                                }
-                                if (check_login($_username, $_password, $conn)) {
-                                    session_start();
-                                    $_SESSION['login_username'] = $_username;
-                                    header("location:home.php");
-                                } else {
-                                    print('incorrect username or password');
-                                    header("");
-                                }
-                            } else {
-                                // nothing works
-                                print('all kinds of errors');
+                            //run the sql script
+                            $result = $conn->query($sql);
+                            while ($row = $result->fetch_array()) {
+                                return true;
                             }
-                            ?>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
+                            return false;
+                        }
+                        if (check_login($_username, $_password, $conn)) {
+                            session_start();
+                            $_SESSION['login_username'] = $_username;
+                            header("location:home.php");
+                        } else {
+                            print('incorrect username or password');
+                            header("");
+                        }
+                    } else {
+                        // nothing works
+                        print('all kinds of errors');
+                    }
+                    ?>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 
         <!--<div class="item">
             <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
