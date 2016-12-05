@@ -16,21 +16,11 @@ echo "
 
 <h2>Sportlethen Page</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros quam,
-pharetra ornare venenatis nec, eleifend vulputate dui. Phasellus a faucibus elit.
-Vivamus sit amet porttitor quam. Nullam ut felis euismod, pulvinar felis a, mollis
-sem. Praesent non magna hendrerit, hendrerit justo consequat, convallis mauris.
-Donec accumsan eros nibh, non imperdiet libero tincidunt efficitur. Integer mattis
-augue sed pulvinar fringilla. In mollis ultrices enim, nec porttitor risus viverra
-luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-ac turpis egestas. Nulla pretium sagittis ultrices. Nunc vel erat eu ante varius
-rhoncus id ut libero. Vestibulum ut nunc rutrum, tempus arcu a, maximus dui.</p>
+<p>Sportlethen CSH is an association of local clubs who are working together to develop safe and fun sport and fitness activities within their local area. 
+Our website is a single access point to find out more about the fantastic sporting opportunities in our area. </p>
 
-<p>Fusce ac faucibus odio, id malesuada nibh. Proin id blandit lectus. Suspendisse
-potenti. Integer accumsan aliquet erat at faucibus. Aliquam sed tristique nisl.
-Morbi at mi eu lacus rutrum facilisis nec eu diam. Mauris condimentum facilisis
-sodales. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-ridiculus mus.</p>
+<p>Sportlethen launched on the 13th August 2016 at Portlethen Academy, 
+which gave people the opportunity to take part in taster sessions of the different sports they can take up in the local area. </p>
 
 </main>
 ";
