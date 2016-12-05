@@ -16,7 +16,6 @@ echo "
 
 <h2>Sportlethen Page</h2>
 
-
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros quam,
 pharetra ornare venenatis nec, eleifend vulputate dui. Phasellus a faucibus elit.
 Vivamus sit amet porttitor quam. Nullam ut felis euismod, pulvinar felis a, mollis
@@ -34,8 +33,6 @@ sodales. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
 ridiculus mus.</p>
 
 </main>
-
 ";
-
 //include the footer
 include ("footer.php");
