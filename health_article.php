@@ -24,11 +24,11 @@ while($row = $result->fetch_array())
     $articleText = $row['content'];
 
     echo "
-<atricle>
+<article>
     <h2>{$articleName}</h2>
     <h3>by {$articleAuthor}</h3>
     {$articleText}
- </atricle>";
+ </article>";
 }
 echo "
 </main>
