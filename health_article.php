@@ -21,7 +21,7 @@ if (isset($_GET['ID'])) {
     echo "Uh Oh, theres been an error, please go back and select a new article";
 }
 
-    $sql = "SELECT * FROM healthnews where itemID = '1'";
+    $sql = "SELECT * FROM healthnews where itemID = 'ID'";
     $result = $conn->query($sql);
 
     while($row = $result->fetch_array())
