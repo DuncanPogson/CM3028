@@ -35,7 +35,11 @@
 ================================================== -->
 <body>
 <?php
-include ("header.php");?>
+
+$selected = "home";
+$current_id = ' id="current"';
+include ("header.php");
+?>
 
 
 <!-- Carousel

@@ -58,8 +58,8 @@ session_start();
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#clubs">Clubs</a></li>
+                        <li <?php if ($selected == "Home") print $current_id; ?>><a href="index.php"><span>Home</span></a></li>
+                        <li <?php if ($selected == "Clubs") print $current_id; ?>><a href="health_wellbeing.php"><span>Clubs</span></a></li>
                         <li><a href="#HealthAndWellbeing">Health and Wellbeing</a></li>
                         <!-- <li class="dropdown">
                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
