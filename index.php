@@ -29,7 +29,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
+    <link href="belekaslol.azurewebsites.net/css/carousel.css" rel="stylesheet">
 </head>
 <!-- NAVBAR
 ================================================== -->
