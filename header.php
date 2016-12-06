@@ -18,7 +18,7 @@ session_start();
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Go Portleithen</title>
+    <title>Go Portlethen</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +54,7 @@ session_start();
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Go Portleithen</a>
+                    <a class="navbar-brand" href="#">Sportlethen</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -74,17 +74,18 @@ session_start();
                              </ul>
                          </li>-->
                     </ul>
-                    <?
-                    if (isset($_SESSION['login_username'])) {
-                        echo "<li><button type=\"button\" class=\"btn btn-link\" data-toggle=\"modal\" data-target=\"#myModal\">
-                                Login
+                    <ul class="nav navbar-nav navbar-right">
+                        <?
+                        if (isset($_SESSION['login_username'])) {
+                            echo  "<li><a href='logout.php'>Logout</a>
+                            </li>";
+                        } else {
+
+                            echo "<li><a href=\"#\" data-toggle=\"modal\" data-target=\"#myModal\">Login</a>
+
                             </button></li>";
-                    } else {
-                        echo "<li><button type=\"button\" class=\"btn btn-link\" data-toggle=\"modal\" data-target=\"#myModal\">
-                                Logout
-                            </button></li>";
-                    }
-                    ?>
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>

@@ -102,7 +102,9 @@
                 <div class="carousel-caption">
                     <h1 style="color:cadetblue;">Portlethen's guide to healthy living and keeping active</h1>
                     <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            Sign up today
+                        </button></p>
                 </div>
             </div>
         </div>
