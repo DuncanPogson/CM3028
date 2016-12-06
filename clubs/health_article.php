@@ -34,4 +34,4 @@ while($row = $result->fetch_array())
 echo "
 </main>
 ";
-include("footer.php");
+include("../footer.php");
