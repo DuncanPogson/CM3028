@@ -37,7 +37,7 @@
 <?php
 include ("header.php");
 ?>
-
+<script>$activePage = basename($_SERVER['PHP_SELF'], ".php");</script>
 
 <!-- Carousel
     ================================================== -->

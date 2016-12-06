@@ -58,9 +58,9 @@ session_start();
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="health_article.php">Clubs</a></li>
-                        <li><a href="health_wellbeing.php">Health and Wellbeing</a></li>
+                        <li class="<?= ($activePage == 'index') ? 'active':''; ?>"><a href="/index.php">Home</a></li>
+                        <li class="<?= ($activePage == 'health_article') ? 'active':''; ?>"><a href="/health_article.php">Home</a></li>
+                        <li class="<?= ($activePage == 'health_wellbeing') ? 'active':''; ?>"><a href="/health_wellbeing.php">Home</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                             <ul class="dropdown-menu">

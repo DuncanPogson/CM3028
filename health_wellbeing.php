@@ -1,3 +1,4 @@
+<script>$activePage = basename($_SERVER['PHP_SELF'], ".php");</script>
 <?php
 /**
  * Created by PhpStorm.
