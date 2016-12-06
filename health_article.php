@@ -1,4 +1,4 @@
-<script>$activePage = basename($_SERVER['PHP_SELF'], ".php");</script>
+<script>$activePage = health($_SERVER['PHP_SELF'], ".php");</script>
 <?php
 /**
  * Created by PhpStorm.
