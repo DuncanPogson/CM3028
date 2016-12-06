@@ -165,11 +165,10 @@ include ("header.php");
 
 
     <!-- FOOTER -->
-    <footer>
+
     <?php
     include("footer.php");
 ?>
-       </footer>
 </div><!-- /.container -->
 
 
