@@ -1,4 +1,4 @@
-<script>$activePage = health2($_SERVER['PHP_SELF'], ".php");</script>
+
 <?php
 /**
  * Created by PhpStorm.
