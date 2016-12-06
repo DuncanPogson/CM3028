@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<link href="http://belekaslol.azurewebsites.net/css/clubs.css" rel="stylesheet">
 <div class="container">
 
     <!-- Introduction Row -->
