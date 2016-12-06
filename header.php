@@ -221,9 +221,18 @@ session_start();
         </div>
     </div>
 </div>
+<script>
+$(document).ready(function()
+{
+var parts = document.URL.split("http:/belekas.azurewebsites.net/");
+// [http:, empty, your domain, firstfolder]
+var firstFolder = parts[3];
 
+$("#mainnav li").attr("class", "noactive");
+$("#mainnav a[href='/" + firstFolder + "/']").parent().attr("class", "active");
+});
 
-
+</script>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
