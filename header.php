@@ -222,16 +222,24 @@ session_start();
     </div>
 </div>
 <script>
-$(document).ready(function()
-{
-var parts = document.URL.split("http:/belekas.azurewebsites.net/");
-// [http:, empty, your domain, firstfolder]
-var firstFolder = parts[3];
+    $url='http://belekaslol.azurewebsites.net';//pass the current url here instead of a static string.
+    $segments = explode ("/",$url);
 
-$("#mainnav li").attr("class", "noactive");
-$("#mainnav a[href='/" + firstFolder + "/']").parent().attr("class", "active");
-});
+    $menuItems=array('Home','Clubs', 'Health and Wellbeing');
 
+
+    $menu=array();
+    foreach ($menuItems as $menuItem) {
+        if($segments[3]==strtolower($menuItem)){
+            $menu[]=('<li class="active"><a href="/'.strtolower($menuItem).'/">'.str_replace("-"," ",$menuItem).'</a></li>');
+
+        } else {
+            $menu[]=('<li class="no-active"><a href="/'.strtolower($menuItem).'/">'.str_replace("-"," ",$menuItem).'</a></li>');
+        }
+    }
+    foreach ($menu as $item) {
+        echo $item.'<br />';
+    }
 </script>
 
 <!-- Bootstrap core JavaScript
