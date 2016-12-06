@@ -28,11 +28,11 @@ $first_part = $components[1];
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="http://belekaslol.azurewebsites.net/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!--[if lt IE 9]><script src="http://belekaslol.azurewebsites.net/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://belekaslol.azurewebsites.net/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,7 +41,7 @@ $first_part = $components[1];
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
+    <link href="http://belekaslol.azurewebsites.net/css/carousel.css" rel="stylesheet">
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -126,7 +126,7 @@ $first_part = $components[1];
                         </button></p>
 
                     <main>
-                        <form class="form-signin" action="login.php" method="post">
+                        <form action="login.php" method="post">
                             Name:<br>
                             <input type="text" name="login_username" placeholder="Username">
                             <br>
@@ -232,10 +232,10 @@ $first_part = $components[1];
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="js/bootstrap.min.js"></script>
+<script src="http://belekaslol.azurewebsites.net/js/bootstrap.min.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-<script src="/js/holder.min.js"></script>
+<script src="http://belekaslol.azurewebsites.net//js/holder.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script src="http://belekaslol.azurewebsites.net/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
