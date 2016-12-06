@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +34,9 @@
 <!-- NAVBAR
 ================================================== -->
 <body>
-<div class="navbar-wrapper">
+<?php
+include ("header.php");?>
+<!--<div class="navbar-wrapper">
     <div class="container">
 
         <nav class="navbar navbar-inverse navbar-static-top">
@@ -52,7 +55,7 @@
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#clubs">Clubs</a></li>
                         <li><a href="#HealthAndWellbeing">Health and Wellbeing</a></li>
-                        <li class="dropdown dropdown-menu-right">
+                        <li class="dropdown">
                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                              <ul class="dropdown-menu">
                                  <li><a href="#">Contact</a></li>
@@ -66,7 +69,7 @@
                          </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <?
+                        <?/*
                         if (isset($_SESSION['login_username'])) {
                             echo  "<li><a href='logout.php'>Logout</a>          
                             </li>";
@@ -76,7 +79,7 @@
                          
                             </button></li>";
                         }
-                        ?>
+                        */?>
                     </ul>
                 </div>
             </div>
@@ -84,7 +87,7 @@
 
     </div>
 </div>
-
+-->
 
 <!-- Carousel
     ================================================== -->
