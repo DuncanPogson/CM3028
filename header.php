@@ -9,7 +9,7 @@ session_start();
 $directoryURI = $_SERVER['REQUEST_URI'];
 $path = parse_url($directoryURI, PHP_URL_PATH);
 $components = explode('/', $path);
-$first_part = $components[0];
+$first_part = $components[1];
 ?>
 <!DOCTYPE html>
 <html lang="en">
