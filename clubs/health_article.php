@@ -8,8 +8,8 @@
  */
 session_start();
 
-include ("Database/LoginSystem/DB_Connect.php");
-include ("header.php");
+include("Database/LoginSystem/DB_Connect.php");
+include("../header.php");
 echo "
 <main>
 ";
@@ -34,4 +34,4 @@ while($row = $result->fetch_array())
 echo "
 </main>
 ";
-include ("footer.php");
+include("footer.php");

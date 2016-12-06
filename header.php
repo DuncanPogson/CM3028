@@ -9,7 +9,7 @@ session_start();
 $directoryURI = $_SERVER['REQUEST_URI'];
 $path = parse_url($directoryURI, PHP_URL_PATH);
 $components = explode('/', $path);
-$first_part = $components[2];
+$first_part = $components[1];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,8 +63,8 @@ $first_part = $components[2];
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="<?php if ($first_part=="") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net">Home</a></li>
-                        <li class="<?php if ($first_part=="/health_article.php") {echo "active"; } else  {echo "noactive";}?>"><a href="health_article.php">Clubs</a></li>
-                        <li class="<?php if ($first_part=="/health_wellbeing.php") {echo "active"; } else  {echo "noactive";}?>"><a href="health_wellbeing.php">Health and wellbeing</a></li>
+                        <li class="<?php if ($first_part=="/clubs") {echo "active"; } else  {echo "noactive";}?>"><a href="clubs/health_article.php">Clubs</a></li>
+                        <li class="<?php if ($first_part=="/health") {echo "active"; } else  {echo "noactive";}?>"><a href="health/health_wellbeing.php">Health and wellbeing</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                             <ul class="dropdown-menu">

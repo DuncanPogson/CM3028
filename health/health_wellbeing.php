@@ -8,8 +8,8 @@
  */
 session_start();
 
-include ("Database/LoginSystem/DB_Connect.php");
-include ("header.php");
+include("Database/LoginSystem/DB_Connect.php");
+include("../header.php");
 echo "
 <main>
 <h2>Health Articles</h2>
@@ -26,11 +26,11 @@ while($row = $result->fetch_array())
 
     
 
-    echo "<li><a href='health_article.php/{$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
+    echo "<li><a href='clubs/health_article.php/{$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
 
 }
 
 echo "
 </main>
 ";
-include ("footer.php");
+include("footer.php");
