@@ -8,7 +8,7 @@
  */
 session_start();
 
-include("Database/LoginSystem/DB_Connect.php");
+include("../Database/LoginSystem/DB_Connect.php");
 include("../header.php");
 echo "
 <main>
