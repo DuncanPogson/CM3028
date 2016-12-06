@@ -62,9 +62,9 @@ $first_part = $components[1];
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="<?php if ($first_part=="") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net">Home</a></li>
-                        <li class="<?php if ($first_part=="") {echo "active"; } else  {echo "noactive";}?>"><a href="health_article.php">Clubs</a></li>
-                        <li class="<?php if ($first_part=="") {echo "active"; } else  {echo "noactive";}?>"><a href="health_wellbeing.php">Health and wellbeing</a></li>
+                        <li class="<?php if ($first_part=="index") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net">Home</a></li>
+                        <li class="<?php if ($first_part=="health_article") {echo "active"; } else  {echo "noactive";}?>"><a href="health_article.php">Clubs</a></li>
+                        <li class="<?php if ($first_part=="health_wellbeing") {echo "active"; } else  {echo "noactive";}?>"><a href="health_wellbeing.php">Health and wellbeing</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                             <ul class="dropdown-menu">
