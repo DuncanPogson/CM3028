@@ -46,6 +46,7 @@ $first_part = $components[1];
 <!-- NAVBAR
 ================================================== -->
 <body>
+<header>
 <div class="navbar-wrapper">
     <div class="container">
 
@@ -225,7 +226,7 @@ $first_part = $components[1];
         </div>
     </div>
 </div>
-
+</header>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
