@@ -8,16 +8,16 @@
         <div class="col-md-8">
 
             <h1 class="page-header">
-                Page Heading
-                <small>Secondary Text</small>
+                Health and Wellbeing
+                <small>News and Articles</small>
             </h1>
 
             <!-- First Blog Post -->
             <h2>
-                <a href="#">Blog Post Title</a>
+                <a href="article.php">Blog Post Title</a>
             </h2>
             <p class="lead">
-                by <a href="index.php">Start Bootstrap</a>
+                by <a href="index.php">Go Portlethen</a>
             </p>
             <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
             <hr>
@@ -30,10 +30,10 @@
 
             <!-- Second Blog Post -->
             <h2>
-                <a href="#">Blog Post Title</a>
+                <a href="article.php">Blog Post Title</a>
             </h2>
             <p class="lead">
-                by <a href="index.php">Start Bootstrap</a>
+                by <a href="index.php">Go Portlethen</a>
             </p>
             <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
             <hr>
@@ -46,10 +46,10 @@
 
             <!-- Third Blog Post -->
             <h2>
-                <a href="#">Blog Post Title</a>
+                <a href="article.php">Blog Post Title</a>
             </h2>
             <p class="lead">
-                by <a href="index.php">Start Bootstrap</a>
+                by <a href="index.php">Go Portlethen</a>
             </p>
             <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
             <hr>
