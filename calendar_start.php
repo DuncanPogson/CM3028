@@ -11,7 +11,7 @@ $post_days = (6 - (date('w', mktime(0,0,0, $showmonth, $day_count, $showyear))))
 
 echo '<div id="calendar_wrap">';
 echo '<div class="title_bar">';
-echo '<div class="previous_month"></div>':
+echo '<div class="previous_month"></div>';
 echo '<div class="show_month">' . $showmonth . '/' . $showyear . '</div>';
 echo '<div class="next_month"></div>';
 echo '</div>';
@@ -29,7 +29,7 @@ echo '</div>';
 /* Previous Month Filler Days  */
 if ($pre_days != 0) {
     for($i=1; $i<=$pre_days; $i++){
-        echo '<div class"non_cal_day"></div>'
+        echo '<div class"non_cal_day"></div>';
     }
 }
 
