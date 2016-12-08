@@ -9,6 +9,7 @@ session_start();
 
 include ("Database/LoginSystem/DB_Connect.php");
 include ("header.php");
+include ("calendarevents.php");
 include ("calendar.php");
 include ("events.php");
 
