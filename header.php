@@ -12,7 +12,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Go Portlethen</title>
-    <link rel="stylesheet" href="css" type="text/css">
+    <link rel="stylesheet" href="calendarCss.css" type="text/css">
 </head>
 <body>
 <header>
