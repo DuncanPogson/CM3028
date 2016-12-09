@@ -15,7 +15,7 @@ include ("calendar_start.php");
 echo "
 
 <main>
-<li></li>
+
 <h2>Sportlethen</h2>
 
 <p>Sportlethen CSH is an association of local clubs who are working together to develop safe and fun sport and fitness activities within their local area. 

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c783777b-5c8f-46d1-8ba2-45b6355818ec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportlethen.php" afterPath="$PROJECT_DIR$/sportlethen.php" />
     </list>
     <ignored path="CM3028.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,12 +48,12 @@
         <entry file="file://$PROJECT_DIR$/sportlethen.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <marker date="1481300574671" expanded="true" signature="233:742" ph="..." />
-                <marker date="1481300574671" expanded="true" signature="269:536" ph="..." />
-                <marker date="1481300574671" expanded="true" signature="541:740" ph="..." />
-                <marker date="1481300574671" expanded="true" signature="755:773" ph="SELECT * FRO... club" />
+                <marker date="1481300616694" expanded="true" signature="233:733" ph="..." />
+                <marker date="1481300616694" expanded="true" signature="260:527" ph="..." />
+                <marker date="1481300616694" expanded="true" signature="532:731" ph="..." />
+                <marker date="1481300616694" expanded="true" signature="746:764" ph="SELECT * FRO... club" />
               </folding>
             </state>
           </provider>
@@ -235,7 +234,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481297798731</updated>
-      <workItem from="1481297799834" duration="2761000" />
+      <workItem from="1481297799834" duration="2803000" />
     </task>
     <task id="LOCAL-00001" summary="Calendar css #1">
       <created>1481297974877</created>
@@ -314,11 +313,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481300464398</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Calendar css #7 working-ish">
+      <created>1481300583588</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1481300583588</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2761000" />
+    <option name="totallyTimeSpent" value="2803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="695" y="0" width="1232" height="1047" extended-state="0" />
@@ -433,12 +439,12 @@
     <entry file="file://$PROJECT_DIR$/sportlethen.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1481300574671" expanded="true" signature="233:742" ph="..." />
-            <marker date="1481300574671" expanded="true" signature="269:536" ph="..." />
-            <marker date="1481300574671" expanded="true" signature="541:740" ph="..." />
-            <marker date="1481300574671" expanded="true" signature="755:773" ph="SELECT * FRO... club" />
+            <marker date="1481300616694" expanded="true" signature="233:733" ph="..." />
+            <marker date="1481300616694" expanded="true" signature="260:527" ph="..." />
+            <marker date="1481300616694" expanded="true" signature="532:731" ph="..." />
+            <marker date="1481300616694" expanded="true" signature="746:764" ph="SELECT * FRO... club" />
           </folding>
         </state>
       </provider>
