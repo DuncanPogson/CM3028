@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c783777b-5c8f-46d1-8ba2-45b6355818ec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calendar_start.php" afterPath="$PROJECT_DIR$/calendar_start.php" />
     </list>
     <ignored path="CM3028.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,17 +35,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar_start.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="calendar_start.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calendar_start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="458">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sportlethen.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sportlethen.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sportlethen.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -95,8 +96,8 @@
         <option value="$PROJECT_DIR$/calendarCss.css" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/health_wellbeing.php" />
-        <option value="$PROJECT_DIR$/calendar_start.php" />
         <option value="$PROJECT_DIR$/sportlethen.php" />
+        <option value="$PROJECT_DIR$/calendar_start.php" />
       </list>
     </option>
   </component>
@@ -234,7 +235,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481297798731</updated>
-      <workItem from="1481297799834" duration="2803000" />
+      <workItem from="1481297799834" duration="2883000" />
     </task>
     <task id="LOCAL-00001" summary="Calendar css #1">
       <created>1481297974877</created>
@@ -320,11 +321,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481300583588</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Calendar css #7 working-ish">
+      <created>1481300626223</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1481300626223</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2803000" />
+    <option name="totallyTimeSpent" value="2883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="695" y="0" width="1232" height="1047" extended-state="0" />
@@ -412,14 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calendar_start.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calendarCss.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-52">
@@ -446,6 +446,14 @@
             <marker date="1481300616694" expanded="true" signature="532:731" ph="..." />
             <marker date="1481300616694" expanded="true" signature="746:764" ph="SELECT * FRO... club" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendar_start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

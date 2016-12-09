@@ -30,7 +30,7 @@ echo '</div>';
 /* previous month filler days  */
 if ($pre_days != 0) {
     for($i=1; $i<=$pre_days; $i++){
-        echo '<div class"non_cal_day"></div>';
+        echo '<div class="non_cal_day"></div>';
     }
 }
 
