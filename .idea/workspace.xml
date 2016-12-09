@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c783777b-5c8f-46d1-8ba2-45b6355818ec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calendar_start.php" afterPath="$PROJECT_DIR$/calendar_start.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/health_wellbeing.php" afterPath="$PROJECT_DIR$/health_wellbeing.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportlethen.php" afterPath="$PROJECT_DIR$/sportlethen.php" />
     </list>
     <ignored path="CM3028.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -237,7 +234,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481297798731</updated>
-      <workItem from="1481297799834" duration="2561000" />
+      <workItem from="1481297799834" duration="2583000" />
     </task>
     <task id="LOCAL-00001" summary="Calendar css #1">
       <created>1481297974877</created>
@@ -306,7 +303,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2561000" />
+    <option name="totallyTimeSpent" value="2583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="695" y="0" width="1232" height="1047" extended-state="0" />
@@ -342,7 +339,8 @@
     <MESSAGE value="Calendar css #5" />
     <MESSAGE value="Calendar css #6" />
     <MESSAGE value="Calendar css #7 working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calendar css #7 working" />
+    <MESSAGE value="Calendar css #7 working :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Calendar css #7 working :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
