@@ -10,6 +10,8 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("header.php");
+
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     //html code to collect user input in the a html form and create a health article from the information
     ?>
 
