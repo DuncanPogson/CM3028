@@ -21,7 +21,7 @@ while($row = $result->fetch_array()) {
 ";
 }
 
-echo "<a>Create Event</a>";
+echo "<a href='events.php'>Create Event</a>";
 
 include("footer.php");
 
