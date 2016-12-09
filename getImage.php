@@ -1,22 +1,12 @@
 <!DOCTYPE html>
-    <html>
-<head>
-    <title>Untitled Document</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-
-</head>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Display Pictures</title>
+    </head>
 
 <body>
-
-
-
-
-
-
-
-
-
 
 <?php
 /**
