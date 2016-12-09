@@ -8,79 +8,61 @@
 
 session_start();
 
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    include("header.php");
+if (isset($_SESSION['login_username'])) //Session exists
+{
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        include("header.php");
+
+        //html code to collect user input in the a html form and create a health article from the information
+        ?>
+
+        <head>
+            <title>Create Article</title>
+        </head>
+        <main>
+            <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+            <script>tinymce.init({selector: 'textarea'});</script>
+            <form action="createNew_HealthArticle.php" method="post">
+                <input type="text" name="articleTitle" placeholder="Article Title">
+                <br>
+                <input type="number" name="ha_importance" placeholder="0" ><br>
+                <br>
+                <textarea name="articleText"></textarea>
+                <input type="submit" value="Post">
+            </form>
+        </main>
+
+        </body>
+        </html>
+
+        <?
+
+        include("footer.php");
+
+    } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        //connect to the database
+        include("Database/LoginSystem/DB_Connect.php");
+
+        $_author = $_SESSION['login_username'];
+        $_ha_title = $_POST["articleTitle"];
+        $_ha_importance = $_POST["ha_importance"];
+        $_ha_content = $_POST["articleText"];
 
 
-    //html code to collect user input in the a html form and create a health article from the information
-    ?>
+        $sql = "INSERT INTO healthnews (title, content, importance, username) VALUES ('" . $_ha_title . "', '" . $_ha_content . "', '" . $_ha_importance . "', '" . $_author . "')";
 
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Create Article</title>
-    </head>
-    <body>
-    <header>
-        <h1>Create an new Health article</h1>
-    </header>
-
-    <main>
-        <form action="createNew_HealthArticle.php" method="post" id="ha_form">
-            Title:<br>
-            <input type="text" name="ha_title" placeholder="title"><br>
-            <br>
-            Importance:<br>
-            <input type="number" name="ha_importance" min="1" max="5" ><br>
-            <br>
-            Content:<br>
-            <textarea name="ha_content" form="ha_form" placeholder="Enter article content here"> </textarea>
-            <br><br>
-            <input type="submit" value="Post">
-        </form>
-    </main>
-
-    </body>
-    </html>
-
-    <?
-
-    include("footer.php");
-
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    //connect to the database
-    include("Database/LoginSystem/DB_Connect.php");
-
-    $_SESSION['login_username'] = $_username;
-
-    //get the user id from the username
-    $sql = "SELECT userID FROM users WHERE username='" . $_username . "'";
-
-    //run the sql script
-    $result = $conn->query($sql);
-
-    $_ha_userID = $result;
-
-    $_ha_title = $_POST["ha_title"];
-    $_ha_importance = $_POST["ha_importance"];
-    $_ha_content = $_POST["ha_content"];
-
-
-    $sql = "INSERT INTO healthnews (title, content, importance, userID) VALUES ('$_ha_title', '$_ha_content', '$_ha_importance', '$_ha_userID')";
-
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    
-    if(mysqli_query($conn, $sql)){
-        header("location:health_wellbeing.php");
-    }else{
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-        echo "post failed, please try again later.";
+        if (mysqli_query($conn, $sql)) {
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            echo "post failed, please try again later.";
+        }
+        header("home.php");
     }
 
 
 } else {
-    // nothing works
-    print('all kinds of errors');
+    // not admin
+    header("location:home.php");
+    print('You must be an admin to create an article');
 }
 ?>
