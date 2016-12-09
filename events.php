@@ -13,9 +13,13 @@ $sql_query = "SELECT * FROM event";
     
 $result = $conn->query($sql_query);
 
-while($row = $result->fetch_array()){
+while($row = $result->fetch_array()) {
 
-    echo "<p>".$row['eventID'] . " ". $row['eventName'] . " ". $row['date'] . " ". $row['time'] . " ". $row['description']."</p>";
+    echo "{$row['eventID']} - {$row['eventName']}</h2>
+ <p>{$row['date']} AT {$row['time']}</p>
+ <p>{$row['description']}</p>
+";
 }
-//include("footer.php");
+
+include("footer.php");
 
