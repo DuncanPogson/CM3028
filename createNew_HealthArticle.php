@@ -11,7 +11,7 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("header.php");
 
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+
     //html code to collect user input in the a html form and create a health article from the information
     ?>
 
@@ -46,6 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <?
 
     include("footer.php");
+
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //connect to the database
     include("Database/LoginSystem/DB_Connect.php");
@@ -67,6 +69,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $sql = "INSERT INTO healthnews (title, content, importance, userID) VALUES ('$_ha_title', '$_ha_content', '$_ha_importance', '$_ha_userID')";
 
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    
     if(mysqli_query($conn, $sql)){
         header("location:health_wellbeing.php");
     }else{
