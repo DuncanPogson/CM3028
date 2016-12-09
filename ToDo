@@ -11,8 +11,8 @@ Create list of clubs - WORKING
 Allowing articles to be selected via the list - WORKING
 Sign up - Sign in - make them add and read from the database - WORKING
 take information from the database using the selected club. - WORKING
-Implement a php form for admins to create new health articles
-Implement access levels
+Implement a php form for admins to create new health articles - Working
+Implement access levels -
 Fix Navigation - Working
 
 Paulius -
@@ -20,7 +20,7 @@ css/bootstrap for entire site
 
 Pushon -
 create an 'events' page for the health and wellbeing, a calendar which shows events,
-health admins should be able to create events
+add security to the site - USE THE SLIDES
 
 Daniel -
 implement a php form for club admins to create an event and add it to the calendar
@@ -29,4 +29,3 @@ help joe if he is stuck
 
 extra tasks -
 add an order by to the club list
-add security to the site
