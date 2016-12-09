@@ -25,10 +25,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     <main>
         <form action="createNew_HealthArticle.php" method="post" id="ha_form">
+            Title:<br>
             <input type="text" name="ha_title" placeholder="title"><br>
             <br>
-            <input type="number" name="ha_importance" placeholder="0" ><br>
+            Importance:<br>
+            <input type="number" name="ha_importance" min="1" max="5" ><br>
             <br>
+            Content:<br>
             <textarea name="ha_content" form="ha_form" placeholder="Enter article content here"> </textarea>
             <br><br>
             <input type="submit" value="Post">
