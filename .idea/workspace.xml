@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c783777b-5c8f-46d1-8ba2-45b6355818ec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calendar_start.php" afterPath="$PROJECT_DIR$/calendar_start.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calendarCss.css" afterPath="$PROJECT_DIR$/calendarCss.css" />
     </list>
     <ignored path="CM3028.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,17 +25,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="calendarCss.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="calendarCss.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calendarCss.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="543">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar_start.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="calendar_start.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calendar_start.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
@@ -93,11 +93,11 @@
       <list>
         <option value="$PROJECT_DIR$/calendarCss.html" />
         <option value="$PROJECT_DIR$/css/calCss.css" />
-        <option value="$PROJECT_DIR$/calendarCss.css" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/health_wellbeing.php" />
         <option value="$PROJECT_DIR$/sportlethen.php" />
         <option value="$PROJECT_DIR$/calendar_start.php" />
+        <option value="$PROJECT_DIR$/calendarCss.css" />
       </list>
     </option>
   </component>
@@ -235,7 +235,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481297798731</updated>
-      <workItem from="1481297799834" duration="2883000" />
+      <workItem from="1481297799834" duration="3046000" />
     </task>
     <task id="LOCAL-00001" summary="Calendar css #1">
       <created>1481297974877</created>
@@ -328,15 +328,22 @@
       <option name="project" value="LOCAL" />
       <updated>1481300626223</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Calendar css #8 working-ish">
+      <created>1481300708216</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1481300708216</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2883000" />
+    <option name="totallyTimeSpent" value="3046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="695" y="0" width="1232" height="1047" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -370,7 +377,8 @@
     <MESSAGE value="Calendar css #7 working" />
     <MESSAGE value="Calendar css #7 working :)" />
     <MESSAGE value="Calendar css #7 working-ish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calendar css #7 working-ish" />
+    <MESSAGE value="Calendar css #8 working-ish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Calendar css #8 working-ish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -420,14 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calendarCss.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -453,6 +453,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendarCss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
