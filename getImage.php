@@ -19,6 +19,7 @@
 include("Database/LoginSystem/DB_Connect.php");
 
 $sql_query = "SELECT * FROM photo";
+$result = $conn->query($sql_query);
 echo "<table>";
 while($row = $result->fetch_array()) {
 
