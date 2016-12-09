@@ -13,7 +13,7 @@
  * Created by PhpStorm....
 
  */
-include("header.php");
+//include("header.php");
 include("Database/LoginSystem/DB_Connect.php");
 
 $sql_query = "SELECT * FROM photo";
@@ -39,7 +39,7 @@ echo "</table>";
 
 
 
- include("footer.php")
+ //include("footer.php")
 ?>
 
 </body>
