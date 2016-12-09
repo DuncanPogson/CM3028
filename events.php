@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 
 include("Database/LoginSystem/DB_Connect.php");
 
-$sql_query = "SELECT * FROM event";
+$sql_query = "SELECT * FROM event; ORDER BY DATE";
     
 $result = $conn->query($sql_query);
 
