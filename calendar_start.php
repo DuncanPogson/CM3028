@@ -13,7 +13,7 @@ echo '<div id="calendar_wrap">';
 echo '<div class="title_bar">';
 echo '<div class="previous_month">"</div>';
 echo '<div class="show_month">' . $showmonth . '/' . $showyear . '</div>';
-echo '<div class="next_month"><"</div>';
+echo '<div class="next_month"></div>';
 echo '</div>';
 echo '<div class="week_days">';
 echo '<div class="days_of_week">Sun</div>';
