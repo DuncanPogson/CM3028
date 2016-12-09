@@ -18,11 +18,10 @@ while($row = $result->fetch_array()) {
     echo "{$row['eventID']} - {$row['eventName']}</h2>
  <p>{$row['date']} AT {$row['time']}</p>
  <p>{$row['description']}</p>
- <p><a>Create Event</a></p>
 ";
 }
 
-
+echo "<a>Create Event</a>";
 
 include("footer.php");
 
