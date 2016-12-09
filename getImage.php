@@ -1,9 +1,19 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Display Pictures</title>
+    </head>
+
+<body>
+
 <?php
 /**
  * Created by PhpStorm....
 
  */
-include("header.php")
+include("header.php");
 include("Database/LoginSystem/DB_Connect.php");
 
 $sql_query = "SELECT * FROM photo";
@@ -31,3 +41,6 @@ echo "</table>";
 
  include("footer.php")
 ?>
+
+</body>
+</html>
