@@ -32,7 +32,7 @@
 .days_of_week {
     float: left;
     width: 14%;
-    text_align: center;
+    text-align: center;
 }
 .cal_day {
     position: relative;
@@ -41,7 +41,7 @@
     margin-bottom: 4px;
     width: 128px;
     height: 95px;
-    background-colour: #9C9;
+    background-color: #9C9;
 }
 .day_heading {
     position: relative;
@@ -49,8 +49,7 @@
     width: 40px;
     height: 16px;
     padding: 6px;
-    colour: #000;
-    font-family: Arial;
+    color: #000;
     font-size: 14px;
 }
 .non_calendar_day {
@@ -60,7 +59,7 @@
     margin-bottom: 4px;
     width: 128px;
     height: 95px;
-    background-colour: #CCC;
+    background-color: #CCC;
 }
 .clear {
     clear: both;
