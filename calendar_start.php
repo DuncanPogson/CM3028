@@ -4,7 +4,6 @@
 $showmonth = 12;
 $showyear = 2016;
 
-include ("calendarCss.html");
 
 // w = numeric representation of the day of the week
 $day_count = cal_days_in_month(CAL_GREGORIAN, $showmonth, $showyear);
@@ -28,21 +27,21 @@ echo '<div class="days_of_week">Sat</div>';
 echo '<div class="clear"</div>';
 echo '</div>';
 
-/* Previous Month Filler Days  */
+/* previous month filler days  */
 if ($pre_days != 0) {
     for($i=1; $i<=$pre_days; $i++){
         echo '<div class"non_cal_day"></div>';
     }
 }
 
-/* Current Month */
+/* current month */
 for ($i=1; $i<= $day_count; $i++){
     echo '<div class="cal_day">';
     echo '<div class="day_heading">' . $i . '</div>';
     echo '</div>';
 }
 
-/* Next Month Filler Days */
+/* next month filler days */
 if ($post_days != 0){
     for($i=1; $i<=$post_days; $i++){
         echo '<div class="non_cal_day"></div>';
