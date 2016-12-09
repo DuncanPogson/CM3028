@@ -13,6 +13,7 @@ Sign up - Sign in - make them add and read from the database - WORKING
 take information from the database using the selected club. - WORKING
 Implement a php form for admins to create new health articles
 Implement access levels
+Fix Navigation - Working
 
 Paulius -
 css/bootstrap for entire site

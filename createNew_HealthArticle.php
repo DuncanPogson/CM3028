@@ -10,17 +10,17 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("header.php");
-    //html code to collect user information from a form and a submit button to run the 'addNewUser' php script
+    //html code to collect user input in the a html form and create a health article from the information
     ?>
 
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>CreateNew</title>
+        <title>Create Article</title>
     </head>
     <body>
     <header>
-        <h1>Create an account to use the site</h1>
+        <h1>Create an new Health article</h1>
     </header>
 
     <main>
