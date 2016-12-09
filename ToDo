@@ -2,7 +2,6 @@ Tasks -
 
 Joe -
 Create the club page-
-take information from the database using the selected club.
 php to take images from the database using the club id and create a gallery
 create a php form to add/create a new club
 help Daniel if stuck
@@ -11,6 +10,7 @@ Duncan -
 Create list of clubs - WORKING
 Allowing articles to be selected via the list - WORKING
 Sign up - Sign in - make them add and read from the database - WORKING
+take information from the database using the selected club. - WORKING
 Implement a php form for admins to create new health articles
 Implement access levels
 
