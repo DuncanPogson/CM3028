@@ -94,10 +94,10 @@ include ("../header.php");
     </a>
 </div><!-- /.carousel -->
 
-<div class="row">
+<!--<div class="row">
         <div class="col-md-6">
             <div class="well">
-<?
+<?/*
             $sql = "SELECT * FROM club";
             $result = $conn->query($sql);
 
@@ -114,12 +114,12 @@ include ("../header.php");
 
 
 
-?>
+*/?>
                 </div>
         </div><!--col-->
         <div class="col-md-6">
         </div>
-    </div>
+    </div>-->
 
 </div><!--container -->
 <!-- /.container -->

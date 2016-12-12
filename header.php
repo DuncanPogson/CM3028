@@ -75,7 +75,7 @@ $first_part = $components[1];
                     <ul class="nav navbar-nav navbar-right">
                         <?
                         if (isset($_SESSION['login_username'])) {
-                            echo  "<li><a href='logout.php'>Logout</a>
+                            echo  "<li><a href='http://belekaslol.azurewebsites.net/logout.php'>Logout</a>
                             </li>";
                         } else {
 
