@@ -67,10 +67,10 @@ $first_part = $components[1];
                         <li class="<?php if ($first_part=="clubs") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net/clubs/clubs.php">Clubs</a></li>
                         <li class="<?php if ($first_part=="health") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net/health/health_wellbeing.php">Health and wellbeing</a></li>
                         <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#contact">
-                            Launch demo modal
+                            Contact
                         </button>
                         <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#about">
-                            Launch demo modal
+                            About
                         </button>
 
 
@@ -219,8 +219,9 @@ $first_part = $components[1];
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
+</div>
             </div>
+        </div>
             <!-- Modal -->
             <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -263,9 +264,7 @@ $first_part = $components[1];
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+
 </header>
 
 <!-- Bootstrap core JavaScript
