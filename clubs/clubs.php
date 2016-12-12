@@ -34,6 +34,7 @@
 ================================================== -->
 <body>
 <?php
+session_start();
 include ("../Database/LoginSystem/DB_Connect.php");
 include ("../calendar_start.php");
 include ("../header.php");
@@ -68,7 +69,7 @@ include ("../header.php");
             <img class src="../images/Clubs.jpg" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore clubs</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="http://belekaslol.azurewebsites.net/clubs/clubs.php" role="button">Explore clubs</a></p>
                 </div>
             </div>
         </div>
