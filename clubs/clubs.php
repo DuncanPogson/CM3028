@@ -37,34 +37,36 @@ include ("../calendar_start.php");
 <div class="container">
 <nav> <?php include "../header.php" ?></nav>
     <!-- Page Header -->
-   <!-- <div class="row">
+   <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Page Heading
-                <small>Secondary Text</small>
+            <h1 class="page-header">
             </h1>
         </div>
     </div>
-    <!-- /.row -->-->
+    <!-- /.row -->
 
     <!-- Projects Row -->
     <div class="row">
-        <div class="col-md-6 portfolio-item">
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-            </a>
-            <h3>
-                <a href="#">Project One</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <div class="col-md-6">
+            <?php
+            $sql = "SELECT * FROM club";
+            $result = $conn->query($sql);
+
+            while($row = $result->fetch_array())
+            {
+            $clubID = $row['clubID'];
+            $clubGenre = $row['genre'];
+            $clubName = $row['clubName'];
+            $clubEmail = $row['clubEmail'];
+
+            echo "<li><a href='../club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>";
+            ?>
+
         </div>
-        <div class="col-md-6 portfolio-item">
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-            </a>
-            <h3>
-                <a href="#">Project Two</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <div class="col-md-6">
+            <?php
+            include "../calendar.php"
+            ?>
         </div>
     </div>
     <!-- /.row -->
