@@ -121,7 +121,7 @@ $first_part = $components[1];
                         </button></p>
 
                     <main>
-                        <form action="login.php" method="post">
+                        <form action="http://belekaslol.azurewebsites.net/login.php" method="post">
                             Name:<br>
                             <input type="text" name="login_username" placeholder="Username">
                             <br>
