@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-include ("../header.php");
 include ("../Database/LoginSystem/DB_Connect.php");
 include ("../calendar_start.php");
 ?>
@@ -36,7 +35,7 @@ include ("../calendar_start.php");
 
 <!-- Page Content -->
 <div class="container">
-
+<nav> <?php include "../header.php" ?></nav>
     <!-- Page Header -->
     <div class="row">
         <div class="col-lg-12">
