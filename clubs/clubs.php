@@ -51,6 +51,7 @@ include ("../header.php");?>
 
     <div class="row">
         <div class="col-md-6">
+            <ul class="list-group">
 <?
             $sql = "SELECT * FROM club";
             $result = $conn->query($sql);
@@ -61,7 +62,11 @@ include ("../header.php");?>
                 $clubName = $row['clubName'];
                 $clubEmail = $row['clubEmail'];
 
-                echo "<li><a href='../club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>";
+                echo "
+    <li class="list-group-item">
+    <a href='../club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}.
+  </li>
+";
             }
 
 ?>
