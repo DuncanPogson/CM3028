@@ -36,7 +36,7 @@ while($row = $result->fetch_array())
     $clubName = $row['clubName'];
     $clubEmail = $row['clubEmail'];
 
-    echo "<li><a href='club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>";
+    echo "<li><a href='clubs/club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>";
 }
 
 echo "

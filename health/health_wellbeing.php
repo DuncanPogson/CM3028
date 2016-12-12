@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+include("../Database/LoginSystem/DB_Connect.php");
+include("../header.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <div class="container">
@@ -13,21 +19,30 @@
             </h1>
 
             <!-- First Blog Post -->
+            <?php
+$sql = "SELECT * FROM healthnews where itemID = '$_selectedArticle'";
+$result = $conn->query($sql);
+
+while($row = $result->fetch_array())
+{
+    $articleID = $row['itemID'];
+    $articleName = $row['title'];
+    $articleAuthor = $row['userID'];
+    $articleText = $row['content'];
+    echo '
             <h2>
-                <a href="article.php">Blog Post Title</a>
+                <a href="article.php">{$articleName}</a>
             </h2>
             <p class="lead">
-                by <a href="index.php">Go Portlethen</a>
+                by <a href="index.php">{$articleAuthor}</a>
             </p>
             <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
             <hr>
             <img class="img-responsive" src="http://placehold.it/900x300" alt="">
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-            <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
-            <hr>
-
+            <p>{$articleText}</p>
+            <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>'
+;}?>
             <!-- Second Blog Post -->
             <h2>
                 <a href="article.php">Blog Post Title</a>
@@ -95,14 +110,21 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <ul class="list-unstyled">
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
+<?php
+$sql = "SELECT * FROM healthnews ";
+$result = $conn->query($sql);
+while($row = $result->fetch_array())
+{
+    $articleID = $row['itemID'];
+    $articleName = $row['title'];
+    $articleAuthor = $row['userID'];
+
+
+
+    echo "<li><a href='health_article.php/{$articleID}'>{$articleName}</a> by {$articleAuthor}</li>";
+
+}
+?>
                         </ul>
                     </div>
                     <!-- /.col-lg-6 -->
@@ -140,23 +162,6 @@
 </div>
 <!-- /.container -->
 <?php
-/**
- * Created by PhpStorm.
- * User: duncanpogson
- * Date: 28/11/2016
- * Time: 20:59
- */
-session_start();
-
-include("../Database/LoginSystem/DB_Connect.php");
-include("../header.php");
-
-echo "
-<main>
-<h2>Health Articles</h2>
-<ul>
-";
-
 $sql = "SELECT * FROM healthnews ";
 $result = $conn->query($sql);
 while($row = $result->fetch_array())
@@ -171,7 +176,4 @@ while($row = $result->fetch_array())
 
 }
 
-echo "
-</main>
-";
 include("../footer.php");

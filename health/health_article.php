@@ -9,10 +9,7 @@
 session_start();
 
 include("../Database/LoginSystem/DB_Connect.php");
-include("../header.php");
-echo "
-<main>
-";
+
 
 $sql = "SELECT * FROM healthnews where itemID = '$_selectedArticle'";
 $result = $conn->query($sql);
@@ -24,14 +21,11 @@ while($row = $result->fetch_array())
     $articleAuthor = $row['userID'];
     $articleText = $row['content'];
 
-    echo "
+   /* echo "
 <article>
     <h2>{$articleName}</h2>
     <h3>by {$articleAuthor}</h3>
-    {$articleText}
- </article>";
+    <p>{$articleText}</p>
+ </article>";*/
 }
-echo "
-</main>
-";
-include("../footer.php");
+;
