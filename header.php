@@ -253,6 +253,7 @@ $first_part = $components[1];
                             <p>About Us bla bla bla</p>
                         </div>
                         <div class="modal-footer">
+
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
                         </div>
