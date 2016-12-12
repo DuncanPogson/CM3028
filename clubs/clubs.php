@@ -60,11 +60,11 @@ include ("../header.php"); ?>
             $clubEmail = $row['clubEmail'];
 
             echo "<li><a href='../club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>";
-
+?>
 
         </div>
         <div class="col-md-6">
-
+<?
             include "../calendar.php";
             ?>
         </div>
