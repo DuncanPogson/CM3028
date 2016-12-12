@@ -63,9 +63,10 @@ include ("../header.php");?>
                 $clubEmail = $row['clubEmail'];
 
                 echo "<ul class='a'>
-<li><a href='club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>;
-                </ul>"
+<li><a href='club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>
+                </ul>";
             }
+
 
 
 ?>
