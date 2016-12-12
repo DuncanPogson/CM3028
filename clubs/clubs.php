@@ -62,11 +62,9 @@ include ("../header.php");?>
                 $clubName = $row['clubName'];
                 $clubEmail = $row['clubEmail'];
 
-                echo "
-    <li class="list-group-item">
-    <a href='../club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}.
-  </li>
-";
+                echo "<ul class='a'>
+<li><a href='club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>;
+                </ul>"
             }
 
 
