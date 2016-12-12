@@ -8,7 +8,11 @@
             <h1 class="page-header">About Us
                 <small>It's Nice to Meet You!</small>
             </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+            <p>Sportlethen CSH is an association of local clubs who are working together to develop safe and fun sport and fitness activities within their local area.
+                Our website is a single access point to find out more about the fantastic sporting opportunities in our area. </p>
+
+            <p>Sportlethen launched on the 13th August 2016 at Portlethen Academy,
+                which gave people the opportunity to take part in taster sessions of the different sports they can take up in the local area. </p>
         </div>
     </div>
 
@@ -45,20 +49,7 @@
             </h3>
             <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
         </div>
-        <div class="col-lg-4 col-sm-6 text-center">
-            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-            <h3>John Smith
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center">
-            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-            <h3>John Smith
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-        </div>
+
     </div>
 
     <hr>
@@ -77,27 +68,3 @@ session_start();
 include("../Database/LoginSystem/DB_Connect.php");
 include("../header.php");
 echo "
-<main>
-";
-
-$sql = "SELECT * FROM healthnews where itemID = '$_selectedArticle'";
-$result = $conn->query($sql);
-
-while($row = $result->fetch_array())
-{
-    $articleID = $row['itemID'];
-    $articleName = $row['title'];
-    $articleAuthor = $row['userID'];
-    $articleText = $row['content'];
-
-    echo "
-<article>
-    <h2>{$articleName}</h2>
-    <h3>by {$articleAuthor}</h3>
-    {$articleText}
- </article>";
-}
-echo "
-</main>
-";
-include("../footer.php");
