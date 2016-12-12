@@ -1,9 +1,4 @@
-<?php
-session_start();
 
-include ("../Database/LoginSystem/DB_Connect.php");
-include ("../calendar_start.php");
-include ("../header.php"); ?>
 <!DOCTYPE HTML>
 <link href="http://belekaslol.azurewebsites.net/css/clubs.css" rel="stylesheet">
 <html lang="en">
@@ -30,7 +25,12 @@ include ("../header.php"); ?>
     <![endif]-->
 
 </head>
+<?php
+session_start();
 
+include ("../Database/LoginSystem/DB_Connect.php");
+include ("../calendar_start.php");
+include ("../header.php");?>
 <body>
 
 <!-- Page Content -->
@@ -45,10 +45,13 @@ include ("../header.php"); ?>
     </div>
     <!-- /.row -->
 
-    <!-- Projects Row -->
+
+
+
+
     <div class="row">
         <div class="col-md-6">
-            <?php
+<?
             $sql = "SELECT * FROM club";
             $result = $conn->query($sql);
 
@@ -60,15 +63,19 @@ include ("../header.php"); ?>
             $clubEmail = $row['clubEmail'];
 
             echo "<li><a href='../club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>";
-?>
 
+?>
         </div>
         <div class="col-md-6">
 <?
             include "../calendar.php";
-            ?>
+?>
         </div>
     </div>
+
+
+?>
+";
     <!-- /.row -->
 
     <!-- Projects Row -->
