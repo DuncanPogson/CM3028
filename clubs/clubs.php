@@ -1,17 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: duncanpogson
- * Date: 28/11/2016
- * Time: 21:25
- */
-
-session_start();
-
-include ("header.php");
-include ("Database/LoginSystem/DB_Connect.php");
-include ("calendar_start.php");
-?>
 <!DOCTYPE HTML>
 <link href="http://belekaslol.azurewebsites.net/css/clubs.css" rel="stylesheet">
 <div class="container">
@@ -34,15 +20,6 @@ include ("calendar_start.php");
         <div class="col-lg-12">
             <h2 class="page-header">Our Team</h2>
         </div>
-        <div class="col-lg-4 col-sm-6 text-center">
-            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-            <h3><a href='club_page.php/?ID={$clubID}'>{$clubName}</a>
-            </h3>
-            <p>Contact: {$clubEmail}, Genre: {$clubGenre}.</p>
-        </div>
-        </li>";
-
-
         <div class="col-lg-4 col-sm-6 text-center">
             <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
             <h3>John Smith
@@ -70,5 +47,18 @@ include ("calendar_start.php");
     <hr>
 
 </div>
-<!-- /.container -->
+<?php
+/**
+ * Created by PhpStorm.
+ * User: duncanpogson
+ * Date: 28/11/2016
+ * Time: 21:25
+ */
+
+session_start();
+
+include ("header.php");
+include ("Database/LoginSystem/DB_Connect.php");
+include ("calendar_start.php");
 ?>
+<!-- /.container -->
