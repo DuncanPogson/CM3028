@@ -68,8 +68,8 @@ $first_part = $components[1];
                         <li class="<?php if ($first_part=="health") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net/health/health_wellbeing.php">Health and wellbeing</a></li>
 
 
-                                <li><a href="#" data-toggle="modal" data-target="#contact">Contact</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#about">About</a></li>
+                                <li><a href=\"#\" data-toggle=\"modal\" data-target="#contact">Contact</a></li>
+                                <li><a href=\"#\" data-toggle=\"modal\" data-target="#about">About</a></li>
 
                             </ul>
                     </ul>
@@ -82,7 +82,7 @@ $first_part = $components[1];
 
                             echo "<li><a href=\"#\" data-toggle=\"modal\" data-target=\"#myModal\">Login</a>
 
-                            </button></li>";
+                            </li>";
                         }
                         ?>
                     </ul>
