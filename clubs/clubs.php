@@ -52,7 +52,7 @@ include ("../header.php");
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="first-slide" src="images/sportsz.jpg" alt="First slide">
+            <img class="first-slide" src="../images/sportsz.jpg" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1 style="color:cadetblue;">Portlethen's guide to healthy living and keeping active</h1>
@@ -65,7 +65,7 @@ include ("../header.php");
         </div>
         <!-- boom -->
         <div class="item">
-            <img class src="images/Clubs.jpg" alt="Second slide">
+            <img class src="../images/Clubs.jpg" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore clubs</a></p>
@@ -73,7 +73,7 @@ include ("../header.php");
             </div>
         </div>
         <div class="item">
-            <img class="third-slide" src="images/zen.jpg" alt="Third slide">
+            <img class="third-slide" src="../images/zen.jpg" alt="Third slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Health And Wellbeing</h1>
@@ -115,11 +115,8 @@ include ("../header.php");
 
 ?>
                 </div>
-        </div>
+        </div><!--col-->
         <div class="col-md-6">
-<?
-            include "../calendar.php";
-?>
         </div>
     </div>
 
