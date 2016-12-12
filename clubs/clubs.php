@@ -65,7 +65,7 @@ include ("../header.php"); ?>
         </div>
         <div class="col-md-6">
 
-            include "../calendar.php"
+            include "../calendar.php";
             ?>
         </div>
     </div>
