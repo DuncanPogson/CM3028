@@ -1,3 +1,17 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: duncanpogson
+ * Date: 28/11/2016
+ * Time: 21:25
+ */
+
+session_start();
+
+include ("header.php");
+include ("Database/LoginSystem/DB_Connect.php");
+include ("calendar_start.php");
+?>
 <!DOCTYPE HTML>
 <link href="http://belekaslol.azurewebsites.net/css/clubs.css" rel="stylesheet">
 <div class="container">
@@ -15,19 +29,42 @@
                 which gave people the opportunity to take part in taster sessions of the different sports they can take up in the local area. </p>
         </div>
     </div>
-
-    <!-- Team Members Row -->
     <div class="row">
+    <?php
+    $sql = "SELECT * FROM club";
+    $result = $conn->query($sql);
+
+    while($row = $result->fetch_array()) {
+        $clubID = $row['clubID'];
+        $clubGenre = $row['genre'];
+        $clubName = $row['clubName'];
+        $clubEmail = $row['clubEmail'];
+
+        echo " <div class=\"col-lg-12\">
+            <h2 class=\"page-header\">Our Team</h2>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center\">
+            <img class=\"img-circle img-responsive img-center\" src=\"http://placehold.it/200x200\" alt=\"\">
+            <h3><a href='club_page.php/?ID={$clubID}'>{$clubName}</a>
+            </h3>
+            <p>Contact: {$clubEmail}, Genre: {$clubGenre}.</p>
+        </div>";
+    }
+    ?>
+
+
         <div class="col-lg-12">
             <h2 class="page-header">Our Team</h2>
         </div>
         <div class="col-lg-4 col-sm-6 text-center">
             <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-            <h3>John Smith
-                <small>Job Title</small>
+            <h3><a href='club_page.php/?ID={$clubID}'>{$clubName}</a>
             </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            <p>Contact: {$clubEmail}, Genre: {$clubGenre}.</p>
         </div>
+        </li>";
+
+
         <div class="col-lg-4 col-sm-6 text-center">
             <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
             <h3>John Smith
@@ -56,15 +93,4 @@
 
 </div>
 <!-- /.container -->
-<?php
-/**
- * Created by PhpStorm.
- * User: duncanpogson
- * Date: 28/11/2016
- * Time: 21:25
- */
-session_start();
-
-include("../Database/LoginSystem/DB_Connect.php");
-include("../header.php");
-echo "
+?>
