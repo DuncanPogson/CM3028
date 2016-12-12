@@ -55,14 +55,14 @@ include ("../header.php");?>
             $sql = "SELECT * FROM club";
             $result = $conn->query($sql);
 
-            while($row = $result->fetch_array())
-            {
-            $clubID = $row['clubID'];
-            $clubGenre = $row['genre'];
-            $clubName = $row['clubName'];
-            $clubEmail = $row['clubEmail'];
+            while($row = $result->fetch_array()) {
+                $clubID = $row['clubID'];
+                $clubGenre = $row['genre'];
+                $clubName = $row['clubName'];
+                $clubEmail = $row['clubEmail'];
 
-            echo "<li><a href='../club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>";
+                echo "<li><a href='../club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>";
+            }
 
 ?>
         </div>
@@ -72,7 +72,7 @@ include ("../header.php");?>
 ?>
         </div>
     </div>
-
+</div>
     <hr>
 
 
@@ -80,20 +80,11 @@ include ("../header.php");?>
 <!-- /.container -->
 
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="../js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
 </body>
 
 </html>
-
-
-session_start();
-
-include ("header.php");
-include ("Database/LoginSystem/DB_Connect.php");
-include ("calendar_start.php");
-?>
-<!-- /.container -->
