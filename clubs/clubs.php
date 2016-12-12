@@ -3,7 +3,7 @@ session_start();
 
 include ("../Database/LoginSystem/DB_Connect.php");
 include ("../calendar_start.php");
-?>
+include ("../header.php"); ?>
 <!DOCTYPE HTML>
 <link href="http://belekaslol.azurewebsites.net/css/clubs.css" rel="stylesheet">
 <html lang="en">
@@ -35,7 +35,7 @@ include ("../calendar_start.php");
 
 <!-- Page Content -->
 <div class="container">
-<nav> <?php include "../header.php" ?></nav>
+
     <!-- Page Header -->
    <div class="row">
         <div class="col-lg-12">
@@ -60,11 +60,11 @@ include ("../calendar_start.php");
             $clubEmail = $row['clubEmail'];
 
             echo "<li><a href='../club_page.php/?ID={$clubID}'>{$clubName}</a> Contact: {$clubEmail}, Genre: {$clubGenre}. </li>";
-            ?>
+
 
         </div>
         <div class="col-md-6">
-            <?php
+
             include "../calendar.php"
             ?>
         </div>
