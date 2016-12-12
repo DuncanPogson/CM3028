@@ -37,14 +37,14 @@ include ("../calendar_start.php");
 <div class="container">
 <nav> <?php include "../header.php" ?></nav>
     <!-- Page Header -->
-    <div class="row">
+   <!-- <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">Page Heading
                 <small>Secondary Text</small>
             </h1>
         </div>
     </div>
-    <!-- /.row -->
+    <!-- /.row -->-->
 
     <!-- Projects Row -->
     <div class="row">
