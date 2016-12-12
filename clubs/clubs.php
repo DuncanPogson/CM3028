@@ -51,7 +51,7 @@ include ("../header.php");?>
 
     <div class="row">
         <div class="col-md-6">
-            <ul class="list-group">
+            <div class="well">
 <?
             $sql = "SELECT * FROM club";
             $result = $conn->query($sql);
@@ -70,6 +70,7 @@ include ("../header.php");?>
 
 
 ?>
+                </div>
         </div>
         <div class="col-md-6">
 <?
