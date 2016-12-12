@@ -66,16 +66,11 @@ $first_part = $components[1];
                         <li class="<?php if ($first_part=="") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net">Home</a></li>
                         <li class="<?php if ($first_part=="clubs") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net/clubs/clubs.php">Clubs</a></li>
                         <li class="<?php if ($first_part=="health") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net/health/health_wellbeing.php">Health and wellbeing</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
+
+
+                                <li><a href="#" data-toggle="modal" data-target="#contact">Contact</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#about">About</a></li>
+
                             </ul>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -222,6 +217,47 @@ $first_part = $components[1];
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Contact</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Having difficulty using the site? or have some ideas to help us improve?
+                                send us an email at support@portlethen.net and we'll get back to you as soon as possible.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">About Us</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>About Us bla bla bla</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
