@@ -66,8 +66,12 @@ $first_part = $components[1];
                         <li class="<?php if ($first_part=="") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net">Home</a></li>
                         <li class="<?php if ($first_part=="clubs") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net/clubs/clubs.php">Clubs</a></li>
                         <li class="<?php if ($first_part=="health") {echo "active"; } else  {echo "noactive";}?>"><a href="http://belekaslol.azurewebsites.net/health/health_wellbeing.php">Health and wellbeing</a></li>
-                        <li><a href="#" data-toggle=\"modal\" data-target="#contact">Contact</a></li>
-                        <li><a href="#" data-toggle=\"modal\" data-target="#about">About</a></li>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#contact">
+                            Launch demo modal
+                        </button>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#about">
+                            Launch demo modal
+                        </button>
 
 
                             </ul>
@@ -134,7 +138,7 @@ $first_part = $components[1];
                     </html>
                     <?
                     //
-                    include("footer.php");
+
 
 
                 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
