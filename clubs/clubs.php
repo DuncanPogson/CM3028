@@ -30,28 +30,6 @@ include ("calendar_start.php");
         </div>
     </div>
     <div class="row">
-    <?php
-    $sql = "SELECT * FROM club";
-    $result = $conn->query($sql);
-
-    while($row = $result->fetch_array()) {
-        $clubID = $row['clubID'];
-        $clubGenre = $row['genre'];
-        $clubName = $row['clubName'];
-        $clubEmail = $row['clubEmail'];
-
-        echo " <div class=\"col-lg-12\">
-            <h2 class=\"page-header\">Our Team</h2>
-        </div>
-        <div class=\"col-lg-4 col-sm-6 text-center\">
-            <img class=\"img-circle img-responsive img-center\" src=\"http://placehold.it/200x200\" alt=\"\">
-            <h3><a href='club_page.php/?ID={$clubID}'>{$clubName}</a>
-            </h3>
-            <p>Contact: {$clubEmail}, Genre: {$clubGenre}.</p>
-        </div>";
-    }
-    ?>
-
 
         <div class="col-lg-12">
             <h2 class="page-header">Our Team</h2>
